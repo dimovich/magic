@@ -29,9 +29,10 @@
 
 
 (defn ham [& args]
-  [:div.ham-c
+  [:div#ham.ham-c
    [:div.text-right.hambtn
     [:span {:style "font-size:30px;cursor:pointer" :onclick "toggleham()"} "&#9776;"]]
+   ;; add menu links
    (into [:div#sidenav.sidenav]
          (map #(let [[n h] %]
                  [:div [:a {:href h} n]])

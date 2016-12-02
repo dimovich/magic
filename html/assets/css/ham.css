@@ -11,7 +11,7 @@
     opacity: 0;
     transition: 0.5s;
     padding-top: 0;
-    width: 180px;
+    width: 170px;
 }
 
 .sidenav a {
@@ -27,9 +27,12 @@
     font-size : 22px;
     letter-spacing : 0.59px;
     background: url("../img/ham-rect.png");
-    height: 1.7em;
+    background-size: 100% 100%;
     margin-bottom: 12px;
-    padding-top: 3px;
+}
+
+.disabled {
+    pointer-events: none;
 }
 
 .sidenav a:hover {

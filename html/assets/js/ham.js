@@ -1,11 +1,41 @@
 var x = true;
+
 function toggleham() {
+    var elem = document.getElementById("sidenav");
     if (Boolean(x)) {
-	document.getElementById("sidenav").style.display = "";
-	document.getElementById("sidenav").style.opacity = "1";
+	elem.style.pointerEvents = "auto";
+	elem.style.opacity = "1";
     } else {
-	document.getElementById("sidenav").style.opacity = "0";
-	document.getElementById("sidenav").style.display = "none";
+	elem.style.opacity = "0";
+	elem.style.pointerEvents = "none";
     }
     x = !x;
 }
+
+
+/*
+//stop click propagation inside ham
+document.getElementById("ham").onclick = function (e) {
+  e = e || window.event;
+  e.cancelBubble = true;
+  if (e.stopPropagation)
+    e.stopPropagation();
+}
+*/
+
+
+/*
+function closeham() {
+    if (!Boolean(x)) {
+	var elem = document.getElementById("sidenav");
+	elem.style.opacity = "0";
+	elem.style.pointerEvents = "none";
+	x = !x;
+    }
+}
+
+
+document.addEventListener("click", function(){
+    closeham();
+});
+*/

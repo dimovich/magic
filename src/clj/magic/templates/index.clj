@@ -16,8 +16,8 @@
   (html
    [:div (ham "HOME" "#top"
               "MENÙ" "menu#food"
-              "CHI SIAMO" "#che-siamo"
-              "EVENTI" "/events"
+              "CHI SIAMO" "#chi-siamo"
+              "EVENTI" "#events"
               "GALLERIA" "#gallery"
               "CONTATTI" "#contacts")]
    [:div.wrap.centered
@@ -27,7 +27,7 @@
      ;;
      [:div.centered
      
-      [:div.top-logo-container
+      [:div#top.top-logo-container
        [:div.top-border
         (svg-to-hiccup "html/assets/svg/border-top3.svg")]
        [:img.top-logo {:src "assets/img/lanave.png"}]
@@ -71,7 +71,7 @@
      ;;
      ;; CHI SIAMO
      ;;
-     [:div.vspace-full
+     [:div#chi-siamo.vspace-full
       [:p.text-center.section-title.overlay
        "CHI SIAMO"]
       [:p.section-text.text-justify
@@ -83,7 +83,7 @@
      ;;
      ;; EVENTI
      ;;
-     [:div.vspace-full
+     [:div#events.vspace-full
       [:p.text-center.section-title.overlay
        "EVENTI"]
       [:div.e-text-container.section-text.centered.text-center
@@ -107,7 +107,7 @@
      ;;
      ;; GALLERIA
      ;;
-     [:div.vspace-full
+     [:div#gallery.vspace-full
       [:p.text-center.section-title.overlay
        "GALLERIA"]
       [:div.g-container]]
@@ -115,7 +115,7 @@
      ;;
      ;; CONTATTI
      ;;
-     [:div.vspace-contacts.contacts-c.centered
+     [:div#contacts.vspace-contacts.contacts-c.centered
       [:p.section-title.overlay
        "CONTATTI"]
       [:p.restaurant-title

@@ -1,0 +1,14 @@
+- Gallery
+  https://github.com/repp/BalancedGallery
+  http://photoswipe.com/
+  http://kenwheeler.github.io/slick/
+  http://www.unheap.com/media/galleries/page/2/
+  http://tympanus.net/Development/GridNavigationEffects/example4.html
+  http://stylehatch.github.io/photoset-grid/
+  http://fotorama.io/
+  https://galleria.io/
+  http://www.jssor.com/demos/nearby-image-partial-visible-slider.slider
+- Calendar
+- Whatsapp
+- Responsive
+- Menu list
