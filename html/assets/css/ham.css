@@ -1,0 +1,41 @@
+.ham-c {
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: 30px;
+    background-color: transparent;
+
+}
+
+.sidenav {
+    opacity: 0;
+    transition: 0.5s;
+    padding-top: 0;
+    width: 180px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color : #000000;
+    color : rgb(0, 0, 0);
+}
+
+.sidenav div {
+    text-align: center;
+    vertical-align: center;
+    font-family : Essays1743;
+    font-size : 22px;
+    letter-spacing : 0.59px;
+    background: url("../img/ham-rect.png");
+    height: 1.7em;
+    margin-bottom: 12px;
+    padding-top: 3px;
+}
+
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+.hambtn {
+    margin-top: 20px;
+}
