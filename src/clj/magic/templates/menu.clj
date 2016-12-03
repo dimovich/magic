@@ -35,18 +35,30 @@
 
 (defn content []
   (html
+   ;;
+   ;; HAMBURGER
+   ;;
    [:div (ham "HOME" "/"
-              "RISTORANTE" "#food"
-              "PUB" "#beer"
-              "DRINKS" "#drinks")]
+              "CHI SIAMO" "/#chi-siamo"
+              "EVENTI" "/#events"
+              "GALLERIA" "/#gallery"
+              "CONTATTI" "/#contacts")]
+
+
+
+   ;;
+   ;; MENU
+   ;;
+   [:div#menu-nav.menu-nav.text-left
+    [:div#food-link.menu-nav-item.clickable
+     (svg-to-hiccup "html/assets/svg/plate-sm.svg")]
+    [:div#beer-link.menu-nav-item.clickable
+     (svg-to-hiccup "html/assets/svg/beer-sm.svg")]
+    [:div#drinks-link.menu-nav-item.clickable
+     (svg-to-hiccup "html/assets/svg/drinks-sm.svg")]]
+   
    [:div.wrap.centered
-    [:div#menu-nav.menu-nav.text-left
-     [:div#food-link.menu-nav-item.clickable
-      (svg-to-hiccup "html/assets/svg/plate-sm.svg")]
-     [:div#beer-link.menu-nav-item.clickable
-      (svg-to-hiccup "html/assets/svg/beer-sm.svg")]
-     [:div#drinks-link.menu-nav-item.clickable
-      (svg-to-hiccup "html/assets/svg/drinks-sm.svg")]]
+
     
     [:div.content
      ;;
@@ -286,6 +298,10 @@
 
       [:div#drinks.menu-section
        [:p.menu-title
+        [:br]
+        "DRINK DIFFERENT"]
+
+       [:p.menu-title.overlay
         "VINI"]
 
        [:p.menu-section-title
@@ -301,7 +317,7 @@
        (menu-item-f "Prosecco" "calice - 3,5   |   bottiglia - 12,00")
        (menu-item-f "Vino Bianco “Grillo di Sicilia”" "calice - 3,5   |   bottiglia - 12,00")
 
-       [:p.menu-title
+       [:p.menu-title.overlay
         "ANALCOLICI"]
 
        [:p.menu-section-title "BIR PLETOK"]
@@ -322,7 +338,8 @@
         "Cola - aranciata bionda - aranciata rossa - gazzosa - tonica -"]
        (menu-item-f "ginger - chinotto - thè freddo limone❘pesca - Succhi di frutta BIO" "3,50")
 
-       [:p.menu-title "ALCOLICI"]
+       [:p.menu-title.overlay
+        "ALCOLICI"]
 
        [:p.menu-section-title "AMARI"]
 
@@ -357,7 +374,8 @@
        (menu-item-f "Calvados" "3,00")
        (menu-item-f "Armagnac Jauneau" "4,00")
 
-       [:p.menu-title "CARTA DEI TÈ"]
+       [:p.menu-title.overlay
+        "CARTA DEI TÈ"]
 
        (menu-item-f "Ceylon - Ratnapura" "3,00")
        [:p.menu-item-text2

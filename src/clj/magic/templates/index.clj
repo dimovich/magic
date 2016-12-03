@@ -32,14 +32,14 @@
               "EVENTI" "#events"
               "GALLERIA" "#gallery"
               "CONTATTI" "#contacts")]
-   [:div.wrap.centered
+   [:div#top.wrap.centered
     [:div.content
      ;;
      ;; LOGO
      ;;
      [:div.centered
      
-      [:div#top.top-logo-container
+      [:div.top-logo-container
        [:div.top-border
         (svg-to-hiccup "html/assets/svg/border-top.svg")]
        [:img.top-logo {:src "assets/img/lanave.png"}]
@@ -83,7 +83,7 @@
      ;;
      ;; CHI SIAMO
      ;;
-     [:div#chi-siamo.vspace-full
+     [:div#chi-siamo.vspace-full.vcenter-section2
       [:p.text-center.section-title.overlay
        "CHI SIAMO"]
       [:p.section-text.text-justify
@@ -96,7 +96,7 @@
      ;;
      ;; EVENTI
      ;;
-     [:div#events.vspace-full
+     [:div#events.vspace-full.vcenter-section3
       [:p.text-center.section-title.overlay
        "EVENTI"]
       [:div.e-text-container.section-text.centered.text-center
@@ -125,7 +125,7 @@
      ;;
      ;; GALLERIA
      ;;
-     [:div#gallery.vspace-full
+     [:div#gallery.vspace-full.vcenter-section4
       [:p.text-center.section-title.overlay
        "GALLERIA"]
       (into [:div#photos.g-container]
@@ -144,10 +144,10 @@
         "Beer Lounge & Restaurant"]]
 
       [:div.container-fluid
-       [:div.row.vcenter-section3
+       [:div.row.vcenter-section5
         [:div {:class "col-md-4"}
-         [:img.clickable {:src "assets/svg/map.svg"
-                          :onclick "location.href='https://goo.gl/maps/LQQfR12tExA2'"}]
+         [:img.clickable.hover {:src "assets/svg/map.svg"
+                                :onclick "location.href='https://goo.gl/maps/LQQfR12tExA2'"}]
          [:p.contact-text
           "Strada della Rezza, 87"
           [:br]
@@ -157,8 +157,8 @@
          [:p.contact-text
           "+39 3336210814"]]
         [:div {:class "col-md-4"}
-         [:img.clickable {:src "assets/svg/mail.svg"
-                          :onclick "location.href='mailto:info@lanavedeifolli.com?Subject=Message%20from%20Website'"}]
+         [:img.clickable.hover {:src "assets/svg/mail.svg"
+                                :onclick "location.href='mailto:info@lanavedeifolli.com?Subject=Message%20from%20Website'"}]
          [:p.contact-text
           "info@lanavedeifolli.com"]]]
 

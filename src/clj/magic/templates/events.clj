@@ -18,7 +18,14 @@
 
 (defn content []
   (html
-   [:div (ham "HOME" "/")]
+   ;;
+   ;; HAMBURGER
+   ;;
+   [:div (ham "HOME" "/"
+              "MENÙ" "menu#food"
+              "CHI SIAMO" "/#chi-siamo"
+              "GALLERIA" "/#gallery"
+              "CONTATTI" "/#contacts")]
    
    [:div.wrap.centered
     [:div.content

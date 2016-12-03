@@ -31,8 +31,11 @@
 
 (defn ham [& args]
   [:div#ham.ham-c
-   [:div.text-right.hambtn
-    [:span {:style "font-size:30px;cursor:pointer" :onclick "toggleham()"} "&#9776;"]]
+   [:div.text-right.hambtn-c
+    ;;[:span.hambtn {:style "font-size:30px;cursor:pointer"} "&#9776;"]
+    [:div.hambtn.hamburger {:class "hamburger--collapse"}
+     [:div.hamburger-box
+      [:div.hamburger-inner]]]]
    ;; add menu links
    (into [:div#sidenav.sidenav]
          (map #(let [[n h] %]
