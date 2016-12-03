@@ -30,7 +30,8 @@
 
      [:div.event-c
       [:div.pic-left
-       [:img]]
+       [:a.swipeboximg {:href "assets/photo/big/e01.jpg"}
+        [:img {:src "assets/photo/reduced/e01.jpg"}]]]
 
       [:p.event-date.text-left
        "15 Luglio 2016"]
@@ -46,7 +47,8 @@
 
      [:div.event-c
       [:div.pic-right
-       [:img]]
+       [:a.swipeboximg {:href "assets/photo/big/e02.jpg"}
+        [:img {:src "assets/photo/reduced/e02.jpg"}]]]
 
       [:p.event-date.text-right
        "29 Luglio 2016"]
@@ -62,7 +64,8 @@
 
      [:div.event-c
       [:div.pic-left
-       [:img]]
+       [:a.swipeboximg {:href "assets/photo/big/e03.jpg"}
+        [:img {:src "assets/photo/reduced/e03.jpg"}]]]
 
       [:p.event-date.text-left
        "1 Agosto 2016"]
@@ -78,8 +81,9 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
       "Fast Frank & The Hot Shout Blues"]
 
      [:div.event-c
-      [:div.pic-left
-       [:img]]
+      [:div.pic-right
+       [:a.swipeboximg {:href "assets/photo/big/e04.jpg"}
+        [:img {:src "assets/photo/reduced/e04.jpg"}]]]
 
       [:p.event-date.text-left
        "8 Settembre 2016"]
@@ -89,7 +93,7 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
        "Il duo è composto da “Fast Frank” Cersosimo alla chitarra e voce e da Gianluca Martini al contrabbasso e basso elettrico. Frank è il protagonista del nuovo blues Made in Italy: è tra i più quotati interpreti del nuovo blues italiano. Si è fatto le ossa nei club di oltre Atlantico, dove è stato notato sui palchi del Midwest, in Illinois, Wisconsin e Indiana. Ha compiuto ripetuti tour musicali a Chicago, la Mecca del blues mondiale, esibendosi a fianco di Breezy Rodio, Linsey Alexander, Dave Pot Tra gli assi internazionali per i quali Fast Frank ha organizzatoin proprio applauditi tour italiani, mettendo a disposizione un solido supporto artistico, logistico e musicale, ricordiamo almeno i chicagoani Rockin' Johnny Burgin e Jon McDonald, il newyorkese Jake Walker, l’olandese Hein\"Little Boogie Boy\" Meijer e il londinese Big Joe Louis." [:br]
        "Nel 2011 esce il suo cd d’esordio, \"Shakin' The Boogie\", seguito nel 2016 da \"A Place In The Evening\", registrato dal vivo nell’astigiano. Nel 2011 il video tratto da un suo brano, \"Daddy Wants You To Come Back Home\", con la regia di Piero Ali Passatore, è stato premiato al Videoclip Festival di Roma."]]
 
-     [:div.vspace-full.month-c
+     [:div.month-c
       [:p.event-title.text-left
        "Senzatempo"]
 
@@ -122,9 +126,9 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
        [:p.event-text
         "Concerto live"]]]
 
-     [:div.vspace-full.month-c
+     [:div.month-c
 
-      [:p.event-title.text-left
+      [:p#04-11-2016.event-title.text-left
        "FUNGHI NIGHT"]
 
       [:div.event-c
@@ -134,7 +138,7 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
        [:p.event-text
         "Serata menù FUNGHI - € 30"]]
 
-      [:p.event-title.text-left
+      [:p#11-11-2016.event-title.text-left
        "BAGNA CAUDA NIGHT"]
 
       [:div.event-c
@@ -144,7 +148,7 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
        [:p.event-text
         "Serata menù BAGNA CAUDA - € 25"]]
 
-      [:p.event-title.text-left
+      [:p#27-11-2016.event-title.text-left
        "TORNEO BACKGAMMON"]
 
       [:div.event-c

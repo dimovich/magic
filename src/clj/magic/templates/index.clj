@@ -4,8 +4,20 @@
             [hiccup.core :refer [html]]
             [magic.util :refer [svg-to-hiccup
                                 gen-month-days
-                                ham]]))
+                                ham
+                                get-file-names]]))
 
+;;
+;; generate photo list
+;;
+(defn photos [path]
+  (let [rpath (str path "/reduced")
+        bpath (str path "/big")]
+    ;;reduced
+    (map #(-> [:a.swipeboximg {:href (str bpath "/" %)
+                               :rel "gallery"}
+               [:img {:src (str rpath "/" %)}]])
+         (get-file-names (str "html/" rpath) #"^g.*"))))
 
 
 ;; 
@@ -29,7 +41,7 @@
      
       [:div#top.top-logo-container
        [:div.top-border
-        (svg-to-hiccup "html/assets/svg/border-top3.svg")]
+        (svg-to-hiccup "html/assets/svg/border-top.svg")]
        [:img.top-logo {:src "assets/img/lanave.png"}]
        [:div.top-logo-motto.overlay
         "Beer Lounge & Restaurant"]]]
@@ -42,7 +54,7 @@
        [:div.centered.clickable {:class "col-md-4"
                                  :onclick "window.location='menu#food';"}
         [:div.m-icon
-         (svg-to-hiccup "html/assets/svg/plate3.svg")]
+         (svg-to-hiccup "html/assets/svg/plate.svg")]
         [:div.m-title
          "MENÚ RISTO-PUB"]
         [:div.m-text-container
@@ -51,7 +63,7 @@
        [:div.centered.clickable {:class "col-md-4"
                                  :onclick "window.location='menu#beer';"}
         [:div.m-icon
-         (svg-to-hiccup "html/assets/svg/beer3.svg")]
+         (svg-to-hiccup "html/assets/svg/beer.svg")]
         [:div.m-title
          "BIRRE"]
         [:div.section-text-container
@@ -60,7 +72,7 @@
        [:div.centered.clickable {:class "col-md-4"
                                  :onclick "window.location='menu#drinks';"}
         [:div.m-icon
-         (svg-to-hiccup "html/assets/svg/drinks3.svg")]
+         (svg-to-hiccup "html/assets/svg/drinks.svg")]
         [:div.m-title
          "DRINK DIFFERENT"]
         [:div.m-text-container
@@ -77,7 +89,8 @@
       [:p.section-text.text-justify
        "Un manipolo di folli che si sono detti: «Imbarchiamoci!». Così è nata «la nave dei folli», in omaggio al genio fiammingo del XV secolo, il pittore Jheronimus Bosch. Tuttavia, più che di pittura ci intendiamo di mangiare e bere: dall’esperienza di un pr duttore birraio, dalla competenza di un ristoratore incallito e dalla creatività del cuoco, a cui si aggiunge la professionalità di una figura esperta in comunicazione e marketing, è nata l’idea di un locale consacrato alla degustazione di birre rigorosamente artigianali, abbinate a pietanze tradizionali e piatti creativi. L’attenzione alle materie prime, la scelta di prodotti del territorio, provenienti da piccole realtà artigiane, costituiscono i nostri punti di forza. A tutte queste proposte abbiamo voluto aggiungere un’attrattiva culturale, invitando tutti i mesi artisti, attori di teatro, musicisti, sommelier, per creare serate a tema, eventi, concerti dal vivo e degustazioni."]
       [:div.c-img-container
-       [:img.img-border {:src "assets/photo/reduced/chi_siamo.jpg"}]]]
+       [:a.swipeboximg {:href "assets/img/chi_siamo_big.jpg"}
+        [:img.img-border {:src "assets/img/chi_siamo.jpg"}]]]]
 
 
      ;;
@@ -101,7 +114,12 @@
          "Novembre 2016"]]
        [:div.calendar-day-c
         [:ul.calendar-day
-         (gen-month-days)]]]]
+         (gen-month-days {4 {:name "FUNGHI NIGHT"
+                             :link "04-11-2016"}
+                          11 {:name "BAGNA CAUDA NIGHT"
+                              :link "11-11-2016"}
+                          27 {:name "TORNEO BACKGAMMON"
+                              :link "27-11-2016"}})]]]]
 
 
      ;;
@@ -110,7 +128,8 @@
      [:div#gallery.vspace-full
       [:p.text-center.section-title.overlay
        "GALLERIA"]
-      [:div.g-container]]
+      (into [:div#photos.g-container]
+            (photos "assets/photo"))]
 
      ;;
      ;; CONTATTI
