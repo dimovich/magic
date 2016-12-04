@@ -49,7 +49,7 @@
    ;;
    ;; MENU
    ;;
-   [:div#menu-nav.menu-nav.text-left
+   [:div#menu-nav.menu-nav.vhcenter-menu
     [:div#food-link.menu-nav-item.clickable
      (svg-to-hiccup "html/assets/svg/plate-sm.svg")]
     [:div#beer-link.menu-nav-item.clickable

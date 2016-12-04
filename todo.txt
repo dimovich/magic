@@ -1,3 +1,6 @@
+- make G suggestions
+
+
 - Gallery
   https://github.com/repp/BalancedGallery
   http://photoswipe.com/

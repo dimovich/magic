@@ -134,43 +134,44 @@
      ;;
      ;; CONTATTI
      ;;
-     [:div#contacts.vspace-contacts.contacts-c.centered
-      [:p.section-title.overlay
-       "CONTATTI"]
-      [:p.restaurant-title
-       "La Nave dei folli"]
-      [:div.r-motto-c
-       [:p.restaurant-motto.overlay
-        "Beer Lounge & Restaurant"]]
+     [:div#contacts.vspace-fullm
+      [:div.vcenter-section5
+       [:p.section-title.overlay
+        "CONTATTI"]
+       [:p.restaurant-title
+        "La Nave dei folli"]
+       [:div.r-motto-c
+        [:p.restaurant-motto.overlay
+         "Beer Lounge & Restaurant"]]
 
-      [:div.container-fluid
-       [:div.row.vcenter-section5
-        [:div {:class "col-md-4"}
-         [:img.clickable.hover {:src "assets/svg/map.svg"
-                                :onclick "location.href='https://goo.gl/maps/LQQfR12tExA2'"}]
-         [:p.contact-text
-          "Strada della Rezza, 87"
-          [:br]
-          "Chieri (TO)"]]
-        [:div {:class "col-md-4"}
-         [:img {:src "assets/svg/phone.svg"}]
-         [:p.contact-text
-          "+39 3336210814"]]
-        [:div {:class "col-md-4"}
-         [:img.clickable.hover {:src "assets/svg/mail.svg"
-                                :onclick "location.href='mailto:info@lanavedeifolli.com?Subject=Message%20from%20Website'"}]
-         [:p.contact-text
-          "info@lanavedeifolli.com"]]]
+       [:div.container-fluid
+        [:div.row
+         [:div {:class "col-md-4"}
+          [:img.clickable.hover {:src "assets/svg/map.svg"
+                                 :onclick "location.href='https://goo.gl/maps/LQQfR12tExA2'"}]
+          [:p.contact-text
+           "Strada della Rezza, 87"
+           [:br]
+           "Chieri (TO)"]]
+         [:div {:class "col-md-4"}
+          [:img {:src "assets/svg/phone.svg"}]
+          [:p.contact-text
+           "+39 3336210814"]]
+         [:div {:class "col-md-4"}
+          [:img.clickable.hover {:src "assets/svg/mail.svg"
+                                 :onclick "location.href='mailto:info@lanavedeifolli.com?Subject=Message%20from%20Website'"}]
+          [:p.contact-text {:style "padding-top: 10px;"}
+           "info@lanavedeifolli.com"]]]
 
-       [:div.c-social-c.centered
-        [:div.container-fluid
-         [:div.row
-          [:div {:class "col-md-4"}
-           (svg-to-hiccup "html/assets/svg/facebook.svg")]
-          [:div {:class "col-md-4"}
-           (svg-to-hiccup "html/assets/svg/whatsapp.svg")]
-          [:div {:class "col-md-4"}
-           (svg-to-hiccup "html/assets/svg/telegram.svg")]]]]]]]
+        [:div.c-social-c.centered
+         [:div.container-fluid
+          [:div.row
+           [:div {:class "col-md-4"}
+            (svg-to-hiccup "html/assets/svg/facebook.svg")]
+           [:div {:class "col-md-4"}
+            (svg-to-hiccup "html/assets/svg/whatsapp.svg")]
+           [:div {:class "col-md-4"}
+            (svg-to-hiccup "html/assets/svg/telegram.svg")]]]]]]]]
 
     ;;
     ;; COPYRIGHT
