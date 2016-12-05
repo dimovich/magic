@@ -12,11 +12,6 @@
     font-style: italic;
 }
 
-@media screen and (max-width: 969px) {
-}
-
-@media screen and (min-width: 970px) {
-}
 
 
 html {
@@ -101,4 +96,16 @@ body {
 
 .text-justify {
     text-align: justify;
+}
+
+
+@media screen and (max-width: 900px) {
+    .content {
+	min-width: 460px;
+	padding: 0px 24px;
+	text-align: center;
+	margin: auto;
+	box-sizing: border-box;
+	padding-bottom: -60px;
+    }
 }

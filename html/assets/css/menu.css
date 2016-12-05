@@ -1,5 +1,8 @@
 /*MENU PAGE*/
 
+.content {
+    padding: 0 72px;
+}
 
 .menu-nav {
     min-width: 72px;
