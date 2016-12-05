@@ -31,7 +31,7 @@
 
 (defn ham [& args]
   [:div#ham.ham-c
-   [:div.text-right.hambtn-c
+   [:div.hambtn-c
     ;;[:span.hambtn {:style "font-size:30px;cursor:pointer"} "&#9776;"]
     [:div.hambtn.hamburger {:class "hamburger--collapse"}
      [:div.hamburger-box

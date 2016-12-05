@@ -15,24 +15,24 @@
 /*chi siamo*/
 .vcenter-section2 {
     min-height: 555px;
-    padding-top: calc((100vh - 555px) / 2);
+    padding-top: calc((100vh - 555px) / 4);
 }
 
 /*events*/
 .vcenter-section3 {
-    padding-top: calc((100vh - 560px) / 2);
+    padding-top: calc((100vh - 560px) / 4);
     min-height: 560px;
 }
 
 /*gallery*/
 .vcenter-section4 {
-    padding-top: calc((100vh - 670px) / 2);
+    padding-top: calc((100vh - 670px) / 4);
     min-height: 670px;
 }
 
 /*contacts*/
 .vcenter-section5 {
-    padding-top: calc((100vh - 550px) / 2);
+    padding-top: calc((100vh - 550px) / 4);
     min-height: 550px;
 }
 
@@ -125,12 +125,12 @@
 
 .section-title {
   font-family : Essays1743;
-  font-size : 21px;
+  font-size : 26px;
   letter-spacing : 1.18px;
   color : #231F20;
   color : rgb(35, 31, 32);
   mix-blend-mode: overlay;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   padding-top: 20px;
 }
 
