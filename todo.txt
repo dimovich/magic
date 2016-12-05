@@ -1,5 +1,11 @@
-- make G suggestions
+- ClojureScript
+  - vertical alignment
 
+- Calendar
+
+- Responsive
+
+- Menu list
 
 - Gallery
   https://github.com/repp/BalancedGallery
@@ -12,8 +18,3 @@
   https://galleria.io/
   http://www.jssor.com/demos/nearby-image-partial-visible-slider.slider
 
-- Calendar
-
-- Responsive
-
-- Menu list

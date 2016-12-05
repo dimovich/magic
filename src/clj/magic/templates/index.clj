@@ -49,10 +49,9 @@
      ;;
      ;; MENU
      ;;
-     [:div.container-fluid.vspace-section1
-      [:div.row.vcenter-section1
-       [:div.centered.clickable {:class "col-md-4"
-                                 :onclick "window.location='menu#food';"}
+     [:div.vspace-section1
+      [:div.vcenter-section1
+       [:div.m-item.centered.clickable {:onclick "window.location='menu#food';"}
         [:div.m-icon
          (svg-to-hiccup "html/assets/svg/plate.svg")]
         [:div.m-title
@@ -60,8 +59,8 @@
         [:div.m-text-container
          [:span.m-text
           "Scopri le nostre proposte, prova i nostri piatti preparati con ingredienti freschi del territorio"]]]
-       [:div.centered.clickable {:class "col-md-4"
-                                 :onclick "window.location='menu#beer';"}
+
+       [:div.m-item.clickable {:onclick "window.location='menu#beer';"}
         [:div.m-icon
          (svg-to-hiccup "html/assets/svg/beer.svg")]
         [:div.m-title
@@ -69,8 +68,8 @@
         [:div.section-text-container
          [:span.m-text
           "Vieni a degustare la nostra selezione di etichette italiane ed internazionali"]]]
-       [:div.centered.clickable {:class "col-md-4"
-                                 :onclick "window.location='menu#drinks';"}
+
+       [:div.m-item.clickable {:onclick "window.location='menu#drinks';"}
         [:div.m-icon
          (svg-to-hiccup "html/assets/svg/drinks.svg")]
         [:div.m-title
@@ -144,34 +143,33 @@
         [:p.restaurant-motto.overlay
          "Beer Lounge & Restaurant"]]
 
-       [:div.container-fluid
-        [:div.row
-         [:div {:class "col-md-4"}
-          [:img.clickable.hover {:src "assets/svg/map.svg"
-                                 :onclick "location.href='https://goo.gl/maps/LQQfR12tExA2'"}]
-          [:p.contact-text
-           "Strada della Rezza, 87"
-           [:br]
-           "Chieri (TO)"]]
-         [:div {:class "col-md-4"}
-          [:img {:src "assets/svg/phone.svg"}]
-          [:p.contact-text
-           "+39 3336210814"]]
-         [:div {:class "col-md-4"}
-          [:img.clickable.hover {:src "assets/svg/mail.svg"
-                                 :onclick "location.href='mailto:info@lanavedeifolli.com?Subject=Message%20from%20Website'"}]
-          [:p.contact-text {:style "padding-top: 10px;"}
-           "info@lanavedeifolli.com"]]]
+       [:div {:width "100%"}
+        [:div.tt
+         [:img.clickable.hover {:src "assets/svg/map.svg"
+                                :onclick "location.href='https://goo.gl/maps/LQQfR12tExA2'"}]
+         [:p.contact-text
+          "Strada della Rezza, 87"
+          [:br]
+          "Chieri (TO)"]]
+        [:div.tt
+         [:img {:src "assets/svg/phone.svg"}]
+         [:p.contact-text
+          "+39 3336210814"]]
+        
+        [:div.tt
+         [:img.clickable.hover {:src "assets/svg/mail.svg"
+                                :onclick "location.href='mailto:info@lanavedeifolli.com?Subject=Message%20from%20Website'"}]
+         [:p.contact-text {:style "padding-top: 10px;"}
+          "info@lanavedeifolli.com"]]
 
+        
         [:div.c-social-c.centered
-         [:div.container-fluid
-          [:div.row
-           [:div {:class "col-md-4"}
-            (svg-to-hiccup "html/assets/svg/facebook.svg")]
-           [:div {:class "col-md-4"}
-            (svg-to-hiccup "html/assets/svg/whatsapp.svg")]
-           [:div {:class "col-md-4"}
-            (svg-to-hiccup "html/assets/svg/telegram.svg")]]]]]]]]
+         [:div.tt
+          (svg-to-hiccup "html/assets/svg/facebook.svg")]
+         [:div.tt
+          (svg-to-hiccup "html/assets/svg/whatsapp.svg")]
+         [:div.tt
+          (svg-to-hiccup "html/assets/svg/telegram.svg")]]]]]]
 
     ;;
     ;; COPYRIGHT

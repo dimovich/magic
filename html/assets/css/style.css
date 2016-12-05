@@ -29,22 +29,10 @@ body {
 }
 
 
-@media screen and (max-width: 991px) {
-    .contact-item {
-	font-size: 1.8em;
-    }
-    
-    .contact-item-box {
-	margin-bottom: 2em;
-	text-align: center;
-    }
+@media screen and (max-width: 969px) {
 }
 
-@media screen and (min-width: 992px) {
-    .contact-item {
-	font-size: 1.4em;
-	margin-bottom: -10px;
-    }
+@media screen and (min-width: 970px) {
 }
 
 

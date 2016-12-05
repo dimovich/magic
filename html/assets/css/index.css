@@ -66,6 +66,10 @@
   margin-top: 5px;
 }
 
+.m-item {
+    width: 33%;
+    display: inline-block;
+}
 
 .m-title {
     font-family : Essays1743;
@@ -312,7 +316,7 @@ p}
 
 .c-social-c {
     width: 504px;
-    margin-top: 40px;
+    padding-top: 60px;
 }
 
 .contacts-c {
@@ -327,4 +331,9 @@ p}
   color : #000000;
   color : rgb(0, 0, 0);
   margin-top: 10px;
+}
+
+.tt {
+    width: 33%;
+    display: inline-block;
 }
