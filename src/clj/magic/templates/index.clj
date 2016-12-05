@@ -49,7 +49,7 @@
     ;;
     [:div.vspace-section1
      [:div.vcenter-section1
-      [:div.m-item.centered.clickable {:onclick "window.location='menu#food';"}
+      [:div.tt.centered.clickable {:onclick "window.location='menu#food';"}
        [:div.m-icon
         (svg-to-hiccup "html/assets/svg/plate.svg")]
        [:div.m-title
@@ -58,16 +58,16 @@
         [:span.m-text
          "Scopri le nostre proposte, prova i nostri piatti preparati con ingredienti freschi del territorio"]]]
 
-      [:div.m-item.clickable {:onclick "window.location='menu#beer';"}
+      [:div.tt.clickable {:onclick "window.location='menu#beer';"}
        [:div.m-icon
         (svg-to-hiccup "html/assets/svg/beer.svg")]
        [:div.m-title
         "BIRRE"]
-       [:div.section-text-container
+       [:div.m-text-container
         [:span.m-text
          "Vieni a degustare la nostra selezione di etichette italiane ed internazionali"]]]
 
-      [:div.m-item.clickable {:onclick "window.location='menu#drinks';"}
+      [:div.tt.clickable {:onclick "window.location='menu#drinks';"}
        [:div.m-icon
         (svg-to-hiccup "html/assets/svg/drinks.svg")]
        [:div.m-title

@@ -38,7 +38,7 @@
 
 .top-logo-container {
     height: 175.6px;
-    min-width: 649;
+    width: 649;
     margin-top: 27.5px;
     position: relative;
 }
@@ -55,6 +55,7 @@
 .top-logo {
     height: 85%;
 }
+
 
 .top-logo-motto {
   font-family : Essays1743;
@@ -79,6 +80,7 @@
     color : rgb(35, 31, 32);
     mix-blend-mode: overlay;
     margin-bottom: 0.4em;
+    white-space:nowrap;
 }
 
 
@@ -336,4 +338,27 @@ p}
 .tt {
     width: 33%;
     display: inline-block;
+}
+
+
+
+@media screen and (max-width: 795px) {
+    .top-border {
+	display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .m-text-container {
+	display: none;
+    }
+
+    .tt {
+	width: 243px;
+	display: block;
+	margin: auto;
+    }
+}
+
+@media screen and (min-width: 970px) {
 }
