@@ -1,9 +1,11 @@
+- Mobile
+  - Gallery
+  - Menu list
+  - Ellipsis
+
 - ClojureScript
-  - vertical alignment
-
-- Calendar
-
-- Responsive
+  - Calendar
+  - Gallery
 
 - Menu list
 

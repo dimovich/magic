@@ -16,7 +16,14 @@
                  [enlive "1.1.6"]
                  [hiccup "1.0.5"]
                  [hickory "0.7.0"]
-                 [clj-time "0.12.2"]])
+                 [clj-time "0.12.2"]
+                 [cljsjs/photoswipe "4.1.1-0"]
+                 [cljsjs/waypoints "4.0.0-0"]
+                 [cljsjs/smooth-scroll "9.1.4-0"]
+                 [prismatic/dommy "1.1.0"]
+                 ;; [enfocus "2.1.1"]
+                 ;; [reagent "0.6.0"]
+                 ])
 
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[pandeiro.boot-http :refer [serve]]

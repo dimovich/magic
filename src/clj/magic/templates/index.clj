@@ -97,7 +97,7 @@
     [:div#events.vspace-full.vcenter-section3
      [:p.section-title.overlay
       "EVENTI"]
-     [:div.e-text-container.section-text.centered.text-center
+     [:div.section-text.text-center
       [:p.e-text
        "Concerti, letture di poesia, screaning di film, feste personali."
        [:br]
@@ -143,19 +143,19 @@
         "Beer Lounge & Restaurant"]]
 
       [:div {:width "100%"}
-       [:div.tt
+       [:div.ttr
         [:img.clickable.hover {:src "assets/svg/map.svg"
                                :onclick "location.href='https://goo.gl/maps/LQQfR12tExA2'"}]
         [:p.contact-text
          "Strada della Rezza, 87"
          [:br]
          "Chieri (TO)"]]
-       [:div.tt
+       [:div.ttr
         [:img {:src "assets/svg/phone.svg"}]
         [:p.contact-text
          "+39 3336210814"]]
        
-       [:div.tt
+       [:div.ttr
         [:img.clickable.hover {:src "assets/svg/mail.svg"
                                :onclick "location.href='mailto:info@lanavedeifolli.com?Subject=Message%20from%20Website'"}]
         [:p.contact-text {:style "padding-top: 10px;"}
