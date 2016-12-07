@@ -26,12 +26,12 @@
 
 (defn content []
   (html
-   [:div (ham "HOME" "#top"
-              "MENÙ" "menu#food"
-              "CHI SIAMO" "#chi-siamo"
-              "EVENTI" "#events"
-              "GALLERIA" "#gallery"
-              "CONTATTI" "#contacts")]
+   (ham "HOME" "#top"
+        "MENÙ" "menu#food"
+        "CHI SIAMO" "#chi-siamo"
+        "EVENTI" "#events"
+        "GALLERIA" "#gallery"
+        "CONTATTI" "#contacts")
    
    [:div#top.content
     ;;
@@ -185,7 +185,7 @@
 
 
 (deftemplate index "index.html" []
-  [:body] (html-content (content)))
+  [:body :div#wrap] (html-content (content)))
 
 
 

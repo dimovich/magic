@@ -21,13 +21,14 @@
                  [cljsjs/waypoints "4.0.0-0"]
                  [cljsjs/smooth-scroll "9.1.4-0"]
                  [prismatic/dommy "1.1.0"]
+                 [hipo "0.5.2"]
                  ;; [enfocus "2.1.1"]
                  ;; [reagent "0.6.0"]
                  ])
 
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[pandeiro.boot-http :refer [serve]]
-         '[adzerk.boot-reload :refer [reload]]
+;;         '[adzerk.boot-reload :refer [reload]]
          '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
          'boot.repl)
 
