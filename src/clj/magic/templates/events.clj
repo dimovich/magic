@@ -181,5 +181,5 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
        "Webdesign: MAGIDesign"]]]]))
 
 (deftemplate events "events.html" []
-  [:body] (html-content (content)))
+  [:body :div#wrap] (html-content (content)))
 

@@ -28,7 +28,7 @@
 
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[pandeiro.boot-http :refer [serve]]
-;;         '[adzerk.boot-reload :refer [reload]]
+         '[adzerk.boot-reload :refer [reload]]
          '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
          'boot.repl)
 

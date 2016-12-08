@@ -428,7 +428,7 @@
        "Webdesign: MAGIDesign"]]]]))
 
 (deftemplate menu "menu.html" []
-  [:body] (html-content (content)))
+  [:body :div#wrap] (html-content (content)))
 
 
 
