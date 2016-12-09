@@ -5,19 +5,28 @@
             [magic.util :refer [svg-to-hiccup
                                 gen-month-days
                                 ham
-                                get-file-names]]))
+                                get-file-names
+                                get-image-sizes
+                                files-in-dir]]))
+
+(def image-sizes (get-image-sizes (files-in-dir "html/assets/photo/big/" #"^g.*")))
+
 
 ;;
 ;; generate photo list
 ;;
 (defn photos [path]
-  (let [rpath (str path "/reduced")
-        bpath (str path "/big")]
+  (let [rpath (str path "/reduced/")
+        bpath (str path "/big/")]
     ;;reduced
-    (map #(-> [:a.swipeboximg {:href (str bpath "/" %)
-                               :rel "gallery"}
-               [:img {:src (str rpath "/" %)}]])
-         (get-file-names (str "html/" rpath) #"^g.*"))))
+    (map-indexed #(let [[fname width height] %2]
+                    [:a.image {:href (str bpath fname)
+                               :index %1
+                               :image-size (str width "x" height)}
+                     [:img {:src (str rpath fname)}]])
+                 image-sizes)))
+
+
 
 
 ;; 
@@ -127,7 +136,7 @@
      [:p.text-center.section-title.overlay
       "GALLERIA"]
      (into [:div#photos.g-container]
-           (photos "assets/photo"))]
+             (photos "assets/photo"))]
 
     ;;
     ;; CONTATTI

@@ -3,7 +3,10 @@
             [clj-time.core :refer [number-of-days-in-the-month
                                    today
                                    month
-                                   year]]))
+                                   year]])
+  (:import [java.io File FileInputStream]
+           [javax.imageio.ImageIO]))
+
 
 
 (defn svg-to-hiccup [path]
@@ -65,3 +68,21 @@
        names
        (filter #(re-matches r %))
        sort))
+
+
+
+(defn files-in-dir
+  ([dir]
+   (filter #(not (.isDirectory %))
+           (.listFiles (java.io.File. dir))))
+  ([dir r]
+   (filter #(re-matches r (.getName %)) (files-in-dir dir))))
+
+
+(defn get-image-sizes
+  [files]
+  (map (fn [file]
+         (with-open [r (java.io.FileInputStream. file)]
+           (let [img (javax.imageio.ImageIO/read r)]
+             [(.getName file) (.getWidth img) (.getHeight img)])))
+       files))

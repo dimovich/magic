@@ -1,5 +1,5 @@
 (set-env!
- :source-paths #{"src/clj" "src/cljs"}
+ :source-paths #{"src/clj" "src/cljs" "src/js"}
  :resource-paths #{"html"}
 
  :dependencies '[[org.clojure/clojure "1.8.0"]
@@ -76,8 +76,9 @@
      (watch :verbose verbose)
      (reload)
      (cljs-repl)
-     (cljs :compiler-options {:out-file output-to 
-                              :optimizations optimizations})
+     (cljs :compiler-options {:externs ["row-grid.ext.js"]
+                              :out-file output-to}
+           :optimizations optimizations)
 
      (target :dir #{"target"}))))
 

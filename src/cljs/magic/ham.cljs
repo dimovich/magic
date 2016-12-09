@@ -28,7 +28,8 @@
                                        (if (= (.-keyCode e) 27)
                                          (close-ham! e))))
   
-  (dommy/listen! (sel1 :document) :scroll close-ham!))
+  ;;(dommy/listen! (sel1 :document) :scroll close-ham!)
+  )
 
 
 ;; TODO:

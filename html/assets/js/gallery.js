@@ -6,13 +6,13 @@ $(window).on('load', function() {
 	    rowHeight : 140,
 	    rel : 'gallery',
 	    margins : 20
-	}).on('jg.complete', function () {$('.swipeboximg').swipebox();});
+	});
     } else {
 	$('#photos').justifiedGallery({
 	    lastRow : 'justify', 
 	    rowHeight : 140,
 	    rel : 'gallery',
 	    margins : 20
-	}).on('jg.complete', function () {$('.swipeboximg').swipebox();});
+	});
     }
 });
