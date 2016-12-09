@@ -1,8 +1,8 @@
 - Mobile
-  - Menu list
-  - Ellipsis
   - Fonts
   - PNGs
+  - Menu list
+  - Ellipsis
 
 - ClojureScript
   - Calendar
