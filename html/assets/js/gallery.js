@@ -4,14 +4,12 @@ $(window).on('load', function() {
 	$('#photos').justifiedGallery({
 	    lastRow: 'hide',
 	    rowHeight : 140,
-	    rel : 'gallery',
 	    margins : 20
 	});
     } else {
 	$('#photos').justifiedGallery({
 	    lastRow : 'justify', 
 	    rowHeight : 140,
-	    rel : 'gallery',
 	    margins : 20
 	});
     }

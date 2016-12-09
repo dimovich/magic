@@ -1,13 +1,11 @@
 - Mobile
-  - Gallery
   - Menu list
   - Ellipsis
+  - Fonts
+  - PNGs
 
 - ClojureScript
   - Calendar
-  - Gallery
-
-- Menu list
 
 - Gallery
   https://github.com/repp/BalancedGallery
@@ -19,4 +17,5 @@
   http://fotorama.io/
   https://galleria.io/
   http://www.jssor.com/demos/nearby-image-partial-visible-slider.slider
+  (justified divs) http://jsfiddle.net/EDp8R/9476/
 

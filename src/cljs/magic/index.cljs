@@ -7,6 +7,6 @@
 
 
 (defn ^:export init []
-  (u/get-width! :#debug)
+;;  (u/get-width! :#debug)
   (ham/setup-ham)
-  (p/init-photo :#photoswipe))
+  (p/init-photo))

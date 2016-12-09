@@ -4,8 +4,9 @@
             [hipo.core :as h]
             [dommy.core :as d :refer-macros [sel sel1]]))
 
+(def pswp-slides (atom []))
 
-(defn photo-dom []
+(defn pswp-dom []
   (h/create
    [:div.pswp {:tabindex -1
                :role "dialog"
@@ -22,7 +23,7 @@
        [:div.pswp__counter]
        [:button.pswp__button.pswp__button--close {:title "Close (Esc)"}]
        [:button.pswp__button.pswp__button--share {:title "Share"}]
-       [:button.pswp__button.pswp__button-fs {:title "Toggle fullscreen"}]
+       [:button.pswp__button.pswp__button--fs {:title "Toggle fullscreen"}]
        [:button.pswp__button.pswp__button--zoom {:title "Zoom in/out"}]
 
        [:div.pswp__preloader
@@ -36,36 +37,52 @@
       [:button.pswp__button.pswp__button--arrow--left {:title "Previous (arrow left)"}]
       [:button.pswp__button.pswp__button--arrow--right {:title "Next (arrow right)"}]
       [:div.pswp__caption
-       [:div.pswp__caption__center]]]]]
-   ))
+       [:div.pswp__caption__center]]]]]))
 
 
 
+(defn show-pswp [idx]
+  (let [pswp (sel1 :.pswp)
+        items (clj->js @pswp-slides)
+        options #js {:index idx}
+        gallery (js/PhotoSwipe. pswp js/PhotoSwipeUI_Default items options)]
+    (.init gallery)))
 
-(defn init-photo [id]
+
+;;
+;; extract data from children of gallery container
+;; and build pswp slides
+;; also add onclick events for links
+;;
+(defn create-pswp-slides [xpath]
+  (for [el (sel xpath)
+        :let [;;index
+              idx (js/parseInt (d/attr el :index))
+              ;;medium size
+              msrc (d/attr (aget (d/children el) 0) :src)
+              ;;big size
+              src (d/attr el :href)
+              ;;dimensions
+              [w h] (clojure.string/split (d/attr el :image-size) #"x")
+              ;;register onclick event
+              _ (d/listen! el :click (fn [e]
+                                       (.preventDefault e)
+                                       (show-pswp idx)))]]
+    {:src src
+     :msrc msrc
+     :w (js/parseInt w)
+     :h (js/parseInt h)}))
+
+
+
+(defn init-pswp [id]
   ;; add DOM
-  (-> (sel1 id)
-      (d/append! (photo-dom)))
+  (d/append! (sel1 id) (pswp-dom))
 
-  ;;
-  ;; init rowgrid
-  #_(let [rg (js/rowGrid)
-          c (sel1 :#photos)]
-      (rg c (clj->js {:item-selector ".image" :min-margin 10 :max-margin 25
-                      :first-item-class "first-item" :last-row-class "last-row"
-                      :resize true})))
+  ;; create slides
+  (swap! pswp-slides into (create-pswp-slides [:.g-container :.image])))
 
-  ;; init photoswipe
-  #_(let [pswp (sel1 :.pswp)
-          items (clj->js [{:src "assets/photo/big/g01.jpg"
-                           :w 2048
-                           :h 1536}
-                          {:src "assets/photo/big/g02.jpg"
-                           :w 560
-                           :h 420}
-                          {:src "assets/photo/big/g03.jpg"
-                           :w 1743
-                           :h 1307}])
-          options #js {:index 0}
-          gallery (js/PhotoSwipe. pswp js/PhotoSwipeUI_Default items options)]
-      (.init gallery)))
+
+
+(defn init-photo []
+  (init-pswp :#pswp))
