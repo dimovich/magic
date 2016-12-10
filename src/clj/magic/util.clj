@@ -21,6 +21,7 @@
        first))
 
 
+
 (defn gen-month-days [evts]
   (let [evts (or evts {}) 
         t (today)
@@ -32,13 +33,15 @@
         [:a.c-event.overlay {:href (str "events#" (:link (evts i)))} (:name (evts i))]]])))
 
 
+
+
 (defn ham [& args]
   [:div#ham.ham-c
-   [:div.hambtn-c
-    ;;[:span.hambtn {:style "font-size:30px;cursor:pointer"} "&#9776;"]
+   [:div.hambtn-c.clickable
+    ;;[:span.hambtn {:style "font-size:40px;width:50px;cursor:pointer"} "&#9776;"]
     [:div.hambtn.hamburger {:class "hamburger--collapse"}
-     [:div.hamburger-box
-      [:div.hamburger-inner]]]]
+       [:div.hamburger-box
+        [:div.hamburger-inner]]]]
    ;; add menu links
    (into [:div#sidenav.sidenav]
          (map #(let [[n h] %]

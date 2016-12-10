@@ -77,12 +77,12 @@
 
 (defn init-pswp [id]
   ;; add DOM
-  (d/append! (sel1 id) (pswp-dom))
-
-  ;; create slides
-  (swap! pswp-slides into (create-pswp-slides [:.g-container :.image])))
+  (d/append! (sel1 id) (pswp-dom)))
 
 
 
 (defn init-photo []
-  (init-pswp :#pswp))
+  (init-pswp :#pswp)
+
+  ;; create slides
+  (swap! pswp-slides into (create-pswp-slides [:.g-container :.image])))

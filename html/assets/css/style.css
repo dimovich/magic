@@ -18,6 +18,20 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Essays1743';
+    src:url('../fonts/essays-bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Essays1743';
+    src:url('../fonts/essays-bold-italic.woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
 
 
 html {
@@ -85,7 +99,7 @@ body {
 
 
 .vspace-full {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .vspace-fullm {

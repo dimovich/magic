@@ -14,14 +14,13 @@
 
 /*chi siamo*/
 .vcenter-section2 {
-    min-height: 555px;
     padding-top: calc((100vh - 555px) / 4);
 }
 
 /*events*/
 .vcenter-section3 {
     padding-top: calc((100vh - 560px) / 4);
-    min-height: 560px;
+
 }
 
 /*gallery*/
@@ -34,6 +33,7 @@
 .vcenter-section5 {
     padding-top: calc((100vh - 550px) / 4);
     min-height: 550px;
+    padding-bottom: 80px;
 }
 
 .top-logo-container {
@@ -41,6 +41,7 @@
     width: 649;
     margin-top: 27.5px;
     position: relative;
+    pointer-events:none;
 }
 
 .top-border {
@@ -58,7 +59,7 @@
 
 
 .top-logo-motto {
-  font-family : Essays1743, times;
+  font-family : Essays1743, Verdana, Geneva, sans-serif, times;
   font-style : italic;
   font-size : 23px;
   color : #000000;
@@ -68,7 +69,7 @@
 }
 
 .m-title {
-    font-family : Essays1743, times;
+    font-family : Essays1743, Verdana, Geneva, sans-serif, times;
     font-size : 21px;
     letter-spacing : 1.18px;
     color : #231F20;
@@ -106,7 +107,7 @@
 }
 
 .m-text {
-    font-family : Essays1743, times;
+    font-family : Essays1743, Verdana, Geneva, sans-serif, times;
     font-style : italic;
     font-size : 18px;
     letter-spacing : 0.61px;
@@ -120,14 +121,16 @@
 }
 
 .section-title {
-    font-family : Essays1743, times;
+    font-family : Essays1743, Verdana, Geneva, sans-serif, times;
     font-size : 26px;
+    font-weight: bold;
     letter-spacing : 1.18px;
     color : #231F20;
     color : rgb(35, 31, 32);
     mix-blend-mode: overlay;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-top: 20px;
+    margin-top: 0;
 }
 
 .section-text-container {
@@ -266,6 +269,7 @@ ul {
     letter-spacing : 0.41px;
     color : #000000;
     color : rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 
@@ -273,21 +277,21 @@ ul {
 
 .g-container {
     width: 100%;
-    height: 640px;
+    height: 500px;
     text-align: center;
     overflow: hidden;
 }
 
 .g-container .image-wrap {
     display: inline-block;
-    width: 200px;
-    height: 200px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    width: 220px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .g-container .border-wrap {
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden;
@@ -295,13 +299,13 @@ ul {
 }
 
 .g-container .image {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 210px;
+    max-height: 150px;
 }
 
 
 .g-container img {
-    height: 200px;
+    height: 180px;
 }    
 
 .g-container div:hover {
@@ -395,15 +399,17 @@ ul {
 
     /*menu*/
     .vcenter-section1 {
-	padding-top: calc((100vh - 642px) / 4);
-	min-height: 642px;
+	padding-top: 40px;
+    }
+
+    .vspace-section1 {
+	height: 100%;
     }
 
     /*others*/
     .vcenter-section2, .vcenter-section3, .vcenter-section4, .vcenter-section5 {
 	padding-top: 10px;
 	padding-bottom: 50px;
-	height: 100%;
     }
 
     .vspace-fullm, .vspace-full {
@@ -459,5 +465,36 @@ ul {
     }
     .calendar-day li {
 	min-width: 50%;
+    }
+
+    .overlay, .m-title, .section-title, .calendar-title {
+	mix-blend-mode: normal;
+    }
+}
+
+
+/*2column events*/
+@media screen and (max-width: 460px) {
+    ul {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+    }
+    .calendar-day li {
+	min-width: 100%;
+	text-align: left;
+    }
+    .calendar-day-c {
+	padding-left: 20px;
+	margin: 0;
+    }
+    .c-day-c {
+	position: absolute;
+	width: 200px;
+	margin-left: 15px;
+    }
+
+    .c-event {
+	text-decoration: none;
     }
 }
