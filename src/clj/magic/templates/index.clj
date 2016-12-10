@@ -4,28 +4,8 @@
             [hiccup.core :refer [html]]
             [magic.util :refer [svg-to-hiccup
                                 gen-month-days
-                                ham
-                                get-file-names
-                                get-image-sizes
-                                files-in-dir]]))
-
-(def image-sizes (get-image-sizes (files-in-dir "html/assets/photo/big/" #"^g.*")))
-
-
-;;
-;; generate photo list
-;;
-(defn photos [path]
-  (let [rpath (str path "/reduced/")
-        bpath (str path "/big/")]
-    (map-indexed #(let [[fname width height] %2]
-                    [:div.image-wrap
-                     [:div.border-wrap
-                      [:div.image.clickable {:href (str bpath fname)
-                                             :index %1
-                                             :image-size (str width "x" height)}
-                       [:img {:src (str rpath fname)}]]]])
-                 image-sizes)))
+                                ham ham2
+                                photos]]))
 
 
 ;; 
@@ -34,6 +14,7 @@
 
 (defn content []
   (html
+;;   (ham2)
    (ham "HOME" "#top"
         "MENÙ" "menu#food"
         "CHI SIAMO" "#chi-siamo"
@@ -134,8 +115,7 @@
     [:div#gallery.vspace-full.vcenter-section4
      [:p.text-center.section-title.overlay
       "GALLERIA"]
-     (into [:div#photos.g-container]
-           (photos "assets/photo"))]
+     (photos "assets/photo")]
 
     ;;
     ;; CONTATTI

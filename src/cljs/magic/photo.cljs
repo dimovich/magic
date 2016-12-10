@@ -5,6 +5,7 @@
             [dommy.core :as d :refer-macros [sel sel1]]))
 
 (def pswp-slides (atom []))
+(def jq (js* "$"))
 
 (defn pswp-dom []
   (h/create
@@ -81,8 +82,33 @@
 
 
 
+(defn slide-right [el]
+  #_(-> (jq ".g-slider")
+        (.animate #js {:margin-left "-=250"}, 500))
+  (let [pos (d/px el :margin-left)]
+    (d/set-px! el :margin-left (- pos 250))))
+
+
+(defn slide-left [el]
+  #_(-> (jq ".g-slider")
+        (.animate #js {:margin-left "+=250"}, 500))
+  (let [pos (d/px el :margin-left)]
+    (d/set-px! el :margin-left (+ pos 250))))
+
+
+
 (defn init-photo []
   (init-pswp :#pswp)
 
   ;; create slides
-  (swap! pswp-slides into (create-pswp-slides [:.g-container :.image])))
+  (swap! pswp-slides into (create-pswp-slides [:.g-container :.image]))
+
+  ;; register slider events
+  (let [left (d/sel1 :.gprev)
+        right (d/sel1 :.gnext)
+        slider (d/sel1 :.g-slider)]
+    (d/set-px! slider :margin-left 0)
+    (d/listen! left :click #(slide-left slider))
+    (d/listen! right :click #(slide-right slider))))
+
+

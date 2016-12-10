@@ -4,6 +4,7 @@
   height: -webkit-calc(100vh - 200.6px);
   height: -moz-calc(100vh - 200.6px);
   height: calc(100vh - 200.6px);
+  margin-bottom: 50px;
 }
 
 /*menu*/
@@ -271,48 +272,6 @@ ul {
     color : rgb(0, 0, 0);
     text-decoration: none;
 }
-
-
-
-
-.g-container {
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.g-container .image-wrap {
-    display: inline-block;
-    width: 220px;
-    height: 150px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.g-container .border-wrap {
-    border: 3px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.g-container .image {
-    max-width: 210px;
-    max-height: 150px;
-}
-
-
-.g-container img {
-    height: 180px;
-}    
-
-.g-container div:hover {
-    opacity: 0.8;
-}
-
-
 
 
 
