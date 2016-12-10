@@ -155,3 +155,11 @@
 .clickable:hover {
     mix-blend-mode: overlay;
 }
+
+
+/*Tablets*/
+@media screen and (max-width: 630px) {
+    .menu-item-middle {
+	width: 100%
+    }
+}

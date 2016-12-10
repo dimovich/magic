@@ -19,10 +19,12 @@
   (let [rpath (str path "/reduced/")
         bpath (str path "/big/")]
     (map-indexed #(let [[fname width height] %2]
-                    [:div.image.clickable {:href (str bpath fname)
-                                           :index %1
-                                           :image-size (str width "x" height)}
-                     [:img {:src (str rpath fname)}]])
+                    [:div.image-wrap
+                     [:div.border-wrap
+                      [:div.image.clickable {:href (str bpath fname)
+                                             :index %1
+                                             :image-size (str width "x" height)}
+                       [:img {:src (str rpath fname)}]]]])
                  image-sizes)))
 
 
