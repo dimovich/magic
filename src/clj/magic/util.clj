@@ -38,9 +38,9 @@
 
 (defn ham [& args]
   [:div#ham.ham-c
-   [:div.hambtn-c.clickable
+   [:div.hambtn-c
     ;;[:span.hambtn {:style "font-size:40px;width:50px;cursor:pointer"} "&#9776;"]
-    [:div.hambtn.hamburger {:class "hamburger--collapse"}
+    [:div.hambtn.clickable.hamburger {:class "hamburger--collapse"}
        [:div.hamburger-box
         [:div.hamburger-inner]]]]
    ;; add menu links

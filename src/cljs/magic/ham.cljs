@@ -3,46 +3,23 @@
 
 (def ham-visible (atom false))
 
-
-(defn toggle-ham! [e]
-  (.stopPropagation e)
-
-  (let [el (sel1 :#sidenav)]
-    (if @ham-visible
-      (do
-        ;; hide
-        (dommy/set-style! el :opacity 0)
-        (dommy/toggle-class! el "disabled"))
-      (do
-        ;; show
-        (dommy/toggle-class! el "disabled")
-        (dommy/set-style! el :opacity 1)))
-
-    (dommy/toggle-class! (sel1 :.hambtn) "is-active")
+(defn toggler [nav btn]
+  (fn [e]
+    (.stopPropagation e)
+    (dommy/toggle-class! nav "disabled")
+    (dommy/toggle-class! btn "is-active")
     (swap! ham-visible not)))
 
-
-(defn close-ham! [e]
-  (when @ham-visible
-    (toggle-ham! e)))
-
-
 (defn setup-ham []
-  (dommy/listen! (sel1 :.hambtn-c) :click toggle-ham!)
-  (dommy/listen! (sel1 :body) :click close-ham!)
-
-  (dommy/listen! (sel1 :body) :keyup (fn [e]
-                                       (if (= (.-keyCode e) 27)
-                                         (close-ham! e))))
-  
-  ;;(dommy/listen! (sel1 :document) :scroll close-ham!)
-)
-
-
-;; TODO:
-;; - add fullscreen menu
-
-
-;; Verona
-;; Venezia
-;; Rome (air moldova)
+  (let [nav (sel1 :#sidenav)
+        btn (sel1 :.hambtn)
+        toggle-ham! (toggler nav btn)
+        close-ham! (fn [e]
+                     (when @ham-visible
+                       (toggle-ham! e)))]
+    
+    (dommy/listen! btn :click toggle-ham!)
+    (dommy/listen! (sel1 :body) :click close-ham!)
+    (dommy/listen! (sel1 :body) :keyup (fn [e]
+                                         (if (= (.-keyCode e) 27)
+                                           (close-ham! e))))))
