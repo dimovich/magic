@@ -9,8 +9,8 @@
 
   (let [el (sel1 :#sidenav)]
     (if @ham-visible
-      (dommy/set-attr! el :style "opacity:0;pointer-events:none;z-index:-1;display:none;")
-      (dommy/set-attr! el :style "opacity:1;pointer-events:auto;z-index:10;display:auto;"))
+      (dommy/set-style! el :opacity 0 :z-index -10)
+      (dommy/set-style! el :opacity 1 :z-index 10))
     (dommy/toggle-class! (sel1 :.hambtn) "is-active")
     (swap! ham-visible not)))
 
@@ -34,7 +34,6 @@
 
 ;; TODO:
 ;; - add fullscreen menu
-;; - try photoswipe
 
 
 ;; Verona

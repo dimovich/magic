@@ -75,10 +75,11 @@
             :port port)
      #_(add-source-paths :dirs dirs)
      (watch :verbose verbose)
-;;     (reload)
+     (reload)
      (cljs-repl)
      (cljs :compiler-options {:out-file output-to
-                              :optimizations optimizations})
+                              :optimizations optimizations}
+           :source-map true)
 
      (target :dir #{"target"}))))
 
