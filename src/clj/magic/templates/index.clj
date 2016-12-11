@@ -16,7 +16,7 @@
   (html
 ;;   (ham2)
    (ham "HOME" "#top"
-        "MENÙ" "menu#food"
+        "MENÙ" "menu.html#food"
         "CHI SIAMO" "#chi-siamo"
         "EVENTI" "#events"
         "GALLERIA" "#gallery"
@@ -38,7 +38,7 @@
     ;;
     [:div.vspace-section1
      [:div.vcenter-section1
-      [:div.ttr.centered.clickable {:onclick "window.location='menu#food';"}
+      [:div.ttr.centered.clickable {:onclick "window.location='menu.html#food';"}
        [:div.m-icon
         (svg-to-hiccup "html/assets/svg/plate.svg")]
        [:div.m-title
@@ -47,7 +47,7 @@
         [:span.m-text
          "Scopri le nostre proposte, prova i nostri piatti preparati con ingredienti freschi del territorio"]]]
 
-      [:div.ttr.clickable {:onclick "window.location='menu#beer';"}
+      [:div.ttr.clickable {:onclick "window.location='menu.html#beer';"}
        [:div.m-icon
         (svg-to-hiccup "html/assets/svg/beer.svg")]
        [:div.m-title
@@ -56,7 +56,7 @@
         [:span.m-text
          "Vieni a degustare la nostra selezione di etichette italiane ed internazionali"]]]
 
-      [:div.ttr.clickable {:onclick "window.location='menu#drinks';"}
+      [:div.ttr.clickable {:onclick "window.location='menu.html#drinks';"}
        [:div.m-icon
         (svg-to-hiccup "html/assets/svg/drinks.svg")]
        [:div.m-title

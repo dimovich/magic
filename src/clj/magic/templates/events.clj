@@ -21,11 +21,11 @@
    ;;
    ;; HAMBURGER
    ;;
-   [:div (ham "HOME" "/"
-              "MENÙ" "menu#food"
-              "CHI SIAMO" "/#chi-siamo"
-              "GALLERIA" "/#gallery"
-              "CONTATTI" "/#contacts")]
+   [:div (ham "HOME" "index.html"
+              "MENÙ" "menu.html#food"
+              "CHI SIAMO" "index.html#chi-siamo"
+              "GALLERIA" "index.html#gallery"
+              "CONTATTI" "index.html#contacts")]
    
    [:div.content
     [:p.events-main-title.overlay

@@ -31,7 +31,7 @@
     (for [i (range 1 31 #_(inc (number-of-days-in-the-month t)))]
       [(keyword (str "li#" cy "-" cm "-" i)) i
        [:div.c-day-c
-        [:a.c-event.overlay {:href (str "events#" (:link (evts i)))} (:name (evts i))]]])))
+        [:a.c-event.overlay {:href (str "events.html#" (:link (evts i)))} (:name (evts i))]]])))
 
 
 
@@ -44,7 +44,7 @@
        [:div.hamburger-box
         [:div.hamburger-inner]]]]
    ;; add menu links
-   (into [:div#sidenav.sidenav]
+   (into [:div#sidenav.sidenav.disabled]
          (map #(let [[n h] %]
                  [:div [:a {:href h} n]])
               (partition 2 args)))])

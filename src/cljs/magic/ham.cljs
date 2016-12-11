@@ -9,8 +9,15 @@
 
   (let [el (sel1 :#sidenav)]
     (if @ham-visible
-      (dommy/set-style! el :opacity 0 :z-index -10)
-      (dommy/set-style! el :opacity 1 :z-index 10))
+      (do
+        ;; hide
+        (dommy/set-style! el :opacity 0)
+        (dommy/toggle-class! el "disabled"))
+      (do
+        ;; show
+        (dommy/toggle-class! el "disabled")
+        (dommy/set-style! el :opacity 1)))
+
     (dommy/toggle-class! (sel1 :.hambtn) "is-active")
     (swap! ham-visible not)))
 

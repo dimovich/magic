@@ -10,9 +10,9 @@
 
 
 (defroutes handler
-  (GET "/" [] (index))
-  (GET "/menu" [] (menu))
-  (GET "/events" [] (events))
+  (GET "/index.html" [] (index))
+  (GET "/menu.html" [] (menu))
+  (GET "/events.html" [] (events))
   (files "/" {:root "target"})     ;; to serve static resources
   (resources "/" {:root "target"}) ;; to serve anything else
   (not-found "Page Not Found"))    ;; page not found

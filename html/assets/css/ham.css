@@ -1,3 +1,8 @@
+.disabled {
+    pointer-events: none;
+    height: 0;
+}
+
 .ham-c {
     position: fixed;
     top: 0px;
@@ -8,12 +13,12 @@
 }
 
 .sidenav {
-    opacity: 0;
-    transition: 0.5s;
+    transition: 0.7s;
     padding-top: 0;
     width: 170px;
-    z-index: -10;
+    z-index: 10;
     transition-timing-function: ease;
+    opacity: 0;
 }
 
 .sidenav a {

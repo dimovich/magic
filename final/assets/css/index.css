@@ -4,6 +4,7 @@
   height: -webkit-calc(100vh - 200.6px);
   height: -moz-calc(100vh - 200.6px);
   height: calc(100vh - 200.6px);
+  margin-bottom: 50px;
 }
 
 /*menu*/
@@ -14,33 +15,34 @@
 
 /*chi siamo*/
 .vcenter-section2 {
-    min-height: 555px;
-    padding-top: calc((100vh - 555px) / 2);
+    padding-top: calc((100vh - 555px) / 4);
 }
 
 /*events*/
 .vcenter-section3 {
-    padding-top: calc((100vh - 560px) / 2);
-    min-height: 560px;
+    padding-top: calc((100vh - 560px) / 4);
+
 }
 
 /*gallery*/
 .vcenter-section4 {
-    padding-top: calc((100vh - 670px) / 2);
+    padding-top: calc((100vh - 670px) / 4);
     min-height: 670px;
 }
 
 /*contacts*/
 .vcenter-section5 {
-    padding-top: calc((100vh - 550px) / 2);
+    padding-top: calc((100vh - 550px) / 4);
     min-height: 550px;
+    padding-bottom: 80px;
 }
 
 .top-logo-container {
     height: 175.6px;
-    min-width: 649;
+    width: 649;
     margin-top: 27.5px;
     position: relative;
+    pointer-events:none;
 }
 
 .top-border {
@@ -56,8 +58,9 @@
     height: 85%;
 }
 
+
 .top-logo-motto {
-  font-family : Essays1743;
+  font-family : Essays1743, Verdana, Geneva, sans-serif, times;
   font-style : italic;
   font-size : 23px;
   color : #000000;
@@ -66,15 +69,15 @@
   margin-top: 5px;
 }
 
-
 .m-title {
-    font-family : Essays1743;
+    font-family : Essays1743, Verdana, Geneva, sans-serif, times;
     font-size : 21px;
     letter-spacing : 1.18px;
     color : #231F20;
     color : rgb(35, 31, 32);
     mix-blend-mode: overlay;
     margin-bottom: 0.4em;
+    white-space:nowrap;
 }
 
 
@@ -101,33 +104,34 @@
 
 .m-text-container {
     width: 242.309px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .m-text {
-  font-family : Essays1743;
-  font-style : italic;
-  font-size : 18px;
-  letter-spacing : 0.61px;
-  color : #000000;
-  color : rgb(0, 0, 0);
-  line-height: 1.1em;
+    font-family : Essays1743, Verdana, Geneva, sans-serif, times;
+    font-style : italic;
+    font-size : 18px;
+    letter-spacing : 0.61px;
+    color : #000000;
+    color : rgb(0, 0, 0);
+    line-height: 1.1em;
 }
 
 .m-icon {
-    margin-bottom: 1.3em;
+    padding-bottom: 0.8em;
 }
 
 .section-title {
-  font-family : Essays1743;
-  font-size : 21px;
-  letter-spacing : 1.18px;
-  color : #231F20;
-  color : rgb(35, 31, 32);
-  mix-blend-mode: overlay;
-  margin-bottom: 40px;
-  padding-top: 20px;
+    font-family : Essays1743, Verdana, Geneva, sans-serif, times;
+    font-size : 26px;
+    font-weight: bold;
+    letter-spacing : 1.18px;
+    color : #231F20;
+    color : rgb(35, 31, 32);
+    mix-blend-mode: overlay;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0;
 }
 
 .section-text-container {
@@ -137,13 +141,13 @@
 }
 
 .section-text {
-  font-family : Essays1743;
-  font-style : italic;
-  font-size : 18px;
-  letter-spacing : 0.61px;
-  color : #000000;
-  color : rgb(0, 0, 0);
-  line-height: 1.1em;
+    font-family : Essays1743, times;
+    font-style : italic;
+    font-size : 18px;
+    letter-spacing : 0.61px;
+    color : #000000;
+    color : rgb(0, 0, 0);
+    line-height: 1.1em;
 }
 
 
@@ -152,14 +156,15 @@
     margin-top: 40px;
 }
 
+.c-img-container img {
+    width: 100%;
+}
+
 .img-border {
     border: 2px solid black;
     border-radius: 5px;
 }
 
-.e-text-container {
-    width: 648px;
-}
 
 .e-text {
     line-height: 1.3em;
@@ -167,7 +172,7 @@
 
 
 .calendar-title {
-  font-family : Essays1743;
+  font-family : Essays1743, times;
   font-size : 21px;
   letter-spacing : 1.18px;
   color : #231F20;
@@ -180,7 +185,6 @@
 
 .calendar-container {
     max-width: 810px;
-    height: 280px;
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -266,24 +270,8 @@ ul {
     letter-spacing : 0.41px;
     color : #000000;
     color : rgb(0, 0, 0);
+    text-decoration: none;
 }
-
-
-.g-container {
-    width: 100%;
-    height: 420px;
-}
-
-.g-container a {
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-.g-container a:hover {
-    opacity: 0.8;
-}
-
-
 
 
 
@@ -293,7 +281,7 @@ ul {
   letter-spacing : 1.79px;
   color : #231F20;
   color : rgb(35, 31, 32);
-p}
+}
 
 
 .r-motto-c {
@@ -312,7 +300,7 @@ p}
 
 .c-social-c {
     width: 504px;
-    margin-top: 40px;
+    padding-top: 60px;
 }
 
 .contacts-c {
@@ -327,4 +315,145 @@ p}
   color : #000000;
   color : rgb(0, 0, 0);
   margin-top: 10px;
+}
+
+.ttr {
+    width: 33%;
+    display: inline-block;
+}
+
+.tt {
+    width: 33%;
+    display: inline-block;
+}
+
+
+/*Remove top border*/
+@media screen and (max-width: 795px) {
+    .top-border {
+	display: none;
+    }
+}
+
+/*Tablets*/
+@media screen and (max-width: 900px) {
+    .ttr {
+	width: 243px;
+	display: block;
+	margin: auto;
+    }
+
+    .contact-text {
+	padding-bottom: 1.5em;
+    }
+
+    .c-social-c {
+	padding-top: 20px;
+	padding-bottom: 20px;
+    }
+
+    .m-text-container {
+	padding-bottom: 2em;
+    }
+
+    /*menu*/
+    .vcenter-section1 {
+	padding-top: 40px;
+    }
+
+    .vspace-section1 {
+	height: 100%;
+    }
+
+    /*others*/
+    .vcenter-section2, .vcenter-section3, .vcenter-section4, .vcenter-section5 {
+	padding-top: 10px;
+	padding-bottom: 50px;
+    }
+
+    .vspace-fullm, .vspace-full {
+	height: 100%;
+    }
+
+    .desktop {
+	display: none;
+    }
+    .mobile {
+	display: auto;
+    }
+}
+
+/*Normal Desktop*/
+@media screen and (min-width: 901px) {
+    .desktop {
+	display: auto;
+    }
+    .mobile {
+	display: none;
+    }
+}
+
+
+/*3column events*/
+@media screen and (max-width: 945px) and (min-width: 651px) {
+    ul {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+    }
+
+    .calendar-day li {
+	min-width: 33%;
+    }
+
+
+}
+
+
+/*2column events*/
+@media screen and (max-width: 650px) {
+    /*events*/
+    .vcenter-section3 {
+	padding-top: 0;
+	min-height: 650px;
+    }
+    ul {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+    }
+    .calendar-day li {
+	min-width: 50%;
+    }
+
+    .overlay, .m-title, .section-title, .calendar-title {
+	mix-blend-mode: normal;
+    }
+}
+
+
+/*2column events*/
+@media screen and (max-width: 460px) {
+    ul {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+    }
+    .calendar-day li {
+	min-width: 100%;
+	text-align: left;
+    }
+    .calendar-day-c {
+	padding-left: 20px;
+	margin: 0;
+    }
+    .c-day-c {
+	position: absolute;
+	width: 200px;
+	margin-left: 15px;
+    }
+
+    .c-event {
+	text-decoration: none;
+    }
 }

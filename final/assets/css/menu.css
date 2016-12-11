@@ -1,5 +1,8 @@
 /*MENU PAGE*/
 
+.content {
+    padding: 0 72px;
+}
 
 .menu-nav {
     min-width: 72px;
@@ -151,4 +154,12 @@
 
 .clickable:hover {
     mix-blend-mode: overlay;
+}
+
+
+/*Tablets*/
+@media screen and (max-width: 630px) {
+    .menu-item-middle {
+	width: 100%
+    }
 }

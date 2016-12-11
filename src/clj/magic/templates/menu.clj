@@ -38,11 +38,11 @@
    ;;
    ;; HAMBURGER
    ;;
-   [:div (ham "HOME" "/"
-              "CHI SIAMO" "/#chi-siamo"
-              "EVENTI" "/#events"
-              "GALLERIA" "/#gallery"
-              "CONTATTI" "/#contacts")]
+   [:div (ham "HOME" "index.html"
+              "CHI SIAMO" "index.html#chi-siamo"
+              "EVENTI" "index.html#events"
+              "GALLERIA" "index.html#gallery"
+              "CONTATTI" "index.html#contacts")]
 
 
 

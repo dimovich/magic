@@ -1,3 +1,9 @@
+.debug {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 @font-face {
     font-family: 'Essays1743';
     src:url('../fonts/essays.woff');
@@ -12,6 +18,21 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Essays1743';
+    src:url('../fonts/essays-bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Essays1743';
+    src:url('../fonts/essays-bold-italic.woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 
 html {
     background:url(../img/background.jpg);
@@ -23,30 +44,6 @@ html {
 body {
     background-color: transparent;
 }
-
-.wrap {
-    max-width: 970px;
-}
-
-
-@media screen and (max-width: 991px) {
-    .contact-item {
-	font-size: 1.8em;
-    }
-    
-    .contact-item-box {
-	margin-bottom: 2em;
-	text-align: center;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .contact-item {
-	font-size: 1.4em;
-	margin-bottom: -10px;
-    }
-}
-
 
 .clickable {
     cursor: pointer;
@@ -60,48 +57,35 @@ body {
     mix-blend-mode: overlay;
 }
 
-
-
 .centered {
-    text-align: center;
     margin: auto;
-}
-
-.vcentered {
 }
 
 .content {
-    width: 100%;
+    max-width: 970px;
+    padding: 0px 72px;
+    text-align: center;
     margin: auto;
-    padding: 0px 72px 0px 72px;
+    box-sizing: border-box;
     padding-bottom: -60px;
-/*    border: 1px solid green;*/
-    min-height: 100%;
 }
-
-
-.ham-text {
-
-}
-
 
 
 .left {
     float: left;
     width: 50%;
+    text-align: left;
 }
 
 .right {
     overflow: auto;
+    text-align: right;
 }
 
 .footer {
     position: relative;
-    max-width: 954px;
-    margin-top: -50px;
-    padding: 0px 72px 0px 72px;
+    margin-top: -60px;
     height: 50px;
-    margin: auto;
     clear:both;
 }
 
@@ -115,11 +99,34 @@ body {
 
 
 .vspace-full {
-    height: 100vh;
-    position: relative;
+    min-height: 100vh;
+    margin-bottom: 50px;
 }
 
 .vspace-fullm {
     min-height: 100vh;
-    position: relative;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 900px) {
+    .content {
+/*	min-width: 460px;*/
+	padding: 0px 24px;
+	text-align: center;
+	margin: auto;
+	box-sizing: border-box;
+	padding-bottom: -60px;
+    }
 }
