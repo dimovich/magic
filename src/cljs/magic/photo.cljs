@@ -84,7 +84,8 @@
 ;; slider generator
 ;;
 (defn slider [el sgn step lim]
-  (fn []
+  (fn [e]
+    (.preventDefault e)
     (let [pos (d/px el :margin-left)
           x (- lim pos)
           x (if (sgn step x) x step)]
@@ -108,7 +109,6 @@
         bb2 (d/bounding-client-rect (sel1 :.g-container))
         lim (- (:width bb2) (:width bb))]
 
-    (d/set-px! gsl :margin-left 0)
     (d/listen! left :click (slider gsl > 300 0))
     (d/listen! right :click (slider gsl < -300 lim))))
 
