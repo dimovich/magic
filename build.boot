@@ -21,11 +21,7 @@
                  [cljsjs/waypoints "4.0.0-0"]
                  [cljsjs/smooth-scroll "9.1.4-0"]
                  [prismatic/dommy "1.1.0"]
-                 [hipo "0.5.2"]
-                 [cljsjs/responsive-nav "1.0.39-0"]
-                 ;; [enfocus "2.1.1"]
-                 ;; [reagent "0.6.0"]
-                 ])
+                 [hipo "0.5.2"]])
 
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[pandeiro.boot-http :refer [serve]]
@@ -75,7 +71,7 @@
             :port port)
      #_(add-source-paths :dirs dirs)
      (watch :verbose verbose)
-     (reload)
+;;     (reload)
      (cljs-repl)
      (cljs :compiler-options {:out-file output-to
                               :optimizations optimizations}
