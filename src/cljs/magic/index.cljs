@@ -7,6 +7,8 @@
 
 
 (defn ^:export init []
-;;  (u/get-width! :#debug)
   (ham/setup-ham)
   (p/init-photo))
+
+
+;;  (.addEventListener    js/window   "DOMContentLoaded"   (fn []     ))
