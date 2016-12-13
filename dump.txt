@@ -1,2 +1,59 @@
 http://stackoverflow.com/questions/10417501/multiple-background-images-positioning
 
+---
+<img src="tomato.svg" onerror="this.src='tomato.png'">
+
+<img src="tomato.svg" onerror="this.src='tomato.png'; this.onerror=null;">
+
+
+---
+
+
+
+Modernizr.addTest('mix-blend-mode', function(){
+    return Modernizr.testProp('mixBlendMode');
+});
+
+(or without Modernizr)
+
+if('CSS' in window && 'supports' in window.CSS) {
+    var support = window.CSS.supports('mix-blend-mode','soft-light');
+        support = support?'mix-blend-mode':'no-mix-blend-mode';
+        //$('html').addClass(support);
+}
+
+
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="livingsocial-logo" viewBox="0 0 112 42">
+        …
+    </symbol>
+</svg>
+
+
+<a href="https://www.livingsocial.com/" class="logo">
+    <svg aria-label="LivingSocial>
+        <use xlink:href="#livingsocial-logo">
+        <img src="http://f.cl.ly/items/3t3H3K3q060J1H2H342l/livingsocial-logo.png" alt="LivingSocial">
+    </svg>
+</a>
+
+
+.logo {
+    color: #fff;
+    display: block;
+    height: 5.25em;
+    margin: 0 auto;
+    width: 14em;
+}
+
+.logo svg {
+    max-height: 100%;
+    width: 100%;
+}
+
+.logo img {
+    display: none;
+}
+

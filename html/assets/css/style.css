@@ -119,14 +119,36 @@ body {
     text-align: justify;
 }
 
+.desktop {
+}
+
+.mobile {
+    display: none;
+}
+
+
+.icon-plate, .icon-drinks, .icon-beer {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.icon-plate {
+    background-image: url(../img/plate.png);
+}
+
+.icon-beer {
+    background-image: url(../img/beer.png);
+}
+
+.icon-drinks {
+    background-image: url(../img/drinks.png);
+}
+
 
 @media screen and (max-width: 900px) {
     .content {
 	width: 100%
 	padding: 0px 24px;
-	text-align: center;
-	margin: auto;
-	box-sizing: border-box;
-	padding-bottom: -60px;
     }
 }

@@ -39,8 +39,9 @@
     [:div.vspace-section1
      [:div.vcenter-section1
       [:div.ttr.centered.clickable {:onclick "window.location='menu.html#food';"}
-       [:div.m-icon
-        (svg-to-hiccup "html/assets/svg/plate.svg")]
+       [:div.m-icon.icon-plate
+;;        (svg-to-hiccup "html/assets/svg/plate.svg")
+        ]
        [:div.m-title
         "MENÚ RISTO-PUB"]
        [:div.m-text-container
@@ -48,8 +49,9 @@
          "Scopri le nostre proposte, prova i nostri piatti preparati con ingredienti freschi del territorio"]]]
 
       [:div.ttr.clickable {:onclick "window.location='menu.html#beer';"}
-       [:div.m-icon
-        (svg-to-hiccup "html/assets/svg/beer.svg")]
+       [:div.m-icon.icon-beer
+;;        (svg-to-hiccup "html/assets/svg/beer.svg")
+        ]
        [:div.m-title
         "BIRRE"]
        [:div.m-text-container
@@ -57,8 +59,9 @@
          "Vieni a degustare la nostra selezione di etichette italiane ed internazionali"]]]
 
       [:div.ttr.clickable {:onclick "window.location='menu.html#drinks';"}
-       [:div.m-icon
-        (svg-to-hiccup "html/assets/svg/drinks.svg")]
+       [:div.m-icon.icon-drinks
+;;        (svg-to-hiccup "html/assets/svg/drinks.svg")
+        ]
        [:div.m-title
         "DRINK DIFFERENT"]
        [:div.m-text-container

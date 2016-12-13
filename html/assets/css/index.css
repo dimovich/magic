@@ -118,7 +118,13 @@
 }
 
 .m-icon {
-    padding-bottom: 0.8em;
+    height: 80px;
+    box-sizing: border-box;
+    margin-bottom: 0.8em;
+    padding: 0;
+}
+
+.m-icon:hover {
 }
 
 .section-title {
@@ -412,6 +418,9 @@ ul {
 
 /*2column events*/
 @media screen and (max-width: 650px) {
+    .m-icon {
+	height: 60px;
+    }
     /*events*/
     .vcenter-section3 {
 	padding-top: 0;
