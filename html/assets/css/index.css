@@ -86,6 +86,11 @@
     position: relative;
 }
 
+.clickable:hover .m-title {
+    text-decoration: underline;
+}
+
+/*
 .clickable .m-title:before {
     content: "";
     position: absolute;
@@ -100,7 +105,7 @@
 .clickable:hover .m-title:before {
   visibility: visible;
 }
-
+*/
 
 .m-text-container {
     width: 242.309px;
@@ -118,7 +123,7 @@
 }
 
 .m-icon {
-    height: 80px;
+    height: 70px;
     box-sizing: border-box;
     margin-bottom: 0.8em;
     padding: 0;
@@ -305,8 +310,19 @@ ul {
 
 
 .c-social-c {
-    width: 504px;
-    padding-top: 60px;
+    position: relative;
+    max-width: 504px;
+    height: 85px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.s-icon {
+    height: 80px;
+    box-sizing: border-box;
+    margin-bottom: 0.8em;
+    padding: 0;
 }
 
 .contacts-c {
@@ -327,6 +343,7 @@ ul {
     width: 33%;
     display: inline-block;
 }
+
 
 .tt {
     width: 33%;
@@ -382,16 +399,6 @@ ul {
     }
 }
 
-/*Normal Desktop*/
-@media screen and (min-width: 901px) {
-    .desktop {
-	display: auto;
-    }
-    .mobile {
-	display: none;
-    }
-}
-
 
 /*3column events*/
 @media screen and (max-width: 945px) and (min-width: 651px) {
@@ -432,6 +439,11 @@ ul {
 	mix-blend-mode: normal;
 	color: rgb(184,86,2);
     }
+
+    .c-social-c {
+	margin-top: 20px;
+	margin-bottom: 60px;
+    }
 }
 
 
@@ -454,6 +466,7 @@ ul {
 	position: absolute;
 	width: 200px;
 	margin-left: 15px;
+	height: 1em;
     }
 
     .c-event {

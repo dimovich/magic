@@ -4,17 +4,22 @@
             [hiccup.core :refer [html]]
             [magic.util :refer [svg-to-hiccup
                                 gen-month-days
-                                ham ham2
+                                ham
                                 photos]]))
 
 
+(defn icon [c id l]
+  [c
+   [:div.s-icon.clickable {:onclick "window.location='" l "';"}
+    (svg-to-hiccup (str "html/assets/svg/" id ".svg"))
+    [:img.icon.mobile.hover {:src (str "assets/img/" id ".png")}]]])
+
 ;; 
-;;
+;; hello
 ;; 1356x764
 
 (defn content []
   (html
-   ;;   (ham2)
    (ham "HOME" "#top"
         "MENÙ" "menu.html#food"
         "CHI SIAMO" "#chi-siamo"
@@ -154,13 +159,10 @@
 
        
        [:div.c-social-c.centered
-        [:div.tt
-         (svg-to-hiccup "html/assets/svg/facebook.svg")]
-        [:div.tt
-         (svg-to-hiccup "html/assets/svg/whatsapp.svg")]
-        [:div.tt
-         (svg-to-hiccup "html/assets/svg/telegram.svg")]]]]]
-
+        (icon :div.tt "facebook" "" #_"https://www.facebook.com/La-Nave-dei-Folli-1140174652712678/")
+        (icon :div.tt "whatsapp" "whatsapp://send?text=3336210814")
+        (icon :div.tt "telegram" "https://telegram.me/3336210814")]]]]
+    
     ;;
     ;; COPYRIGHT
     ;;

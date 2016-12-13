@@ -37,25 +37,14 @@
 
 
 (defn ham [& args]
-  [:div#ham.ham-c
-   [:div.hambtn-c
-    ;;[:span.hambtn {:style "font-size:40px;width:50px;cursor:pointer"} "&#9776;"]
-    [:div.hambtn.clickable.hamburger {:class "hamburger--collapse"}
-       [:div.hamburger-box
-        [:div.hamburger-inner]]]]
-   ;; add menu links
+  [:div
+   [:div#hambtn.hambtn.clickable.hamburger {:class "hamburger--collapse"}
+    [:div.hamburger-box
+     [:div.hamburger-inner]]]
    (into [:div#sidenav.sidenav.disabled]
          (map #(let [[n h] %]
-                 [:div [:a {:href h} n]])
+                 [:div [:a {:href h :data-scroll true} n]])
               (partition 2 args)))])
-
-
-
-(defn ham2 []
-  [:nav.nav-collapse
-   [:ul
-    [:li [:a {:href "#"} "HOME"]]
-    [:li [:a {:href "#"} "About"]]]])
 
 
 (defn only-files
@@ -110,8 +99,8 @@
         bpath (str path "/big/")]
     
     [:div#photos.g-container
-     [:a.gnext "next"]
-     [:a.gprev "prev"]
+     [:a.gnext]
+     [:a.gprev]
      (into [:div.g-slider]
            (let [p (map-indexed #(let [[fname width height] %2]
                                    [:div.image-wrap

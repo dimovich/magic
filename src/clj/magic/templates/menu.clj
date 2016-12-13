@@ -50,12 +50,15 @@
    ;; MENU MENU
    ;;
    [:div#menu-nav.menu-nav.vhcenter-menu
-    [:div#food-link.menu-nav-item.clickable
-     (svg-to-hiccup "html/assets/svg/plate-sm.svg")]
-    [:div#beer-link.menu-nav-item.clickable
-     (svg-to-hiccup "html/assets/svg/beer-sm.svg")]
-    [:div#drinks-link.menu-nav-item.clickable
-     (svg-to-hiccup "html/assets/svg/drinks-sm.svg")]]
+    [:a#food-link.menu-nav-item.clickable {:href "#food" :data-scroll true}
+;;     (svg-to-hiccup "html/assets/svg/plate-sm.svg")
+     [:img.icon {:src "assets/img/plate.png"}]]
+    [:a#beer-link.menu-nav-item.clickable  {:href "#beer" :data-scroll true}
+;;     (svg-to-hiccup "html/assets/svg/beer-sm.svg")
+     [:img.icon {:src "assets/img/beer.png"}]]
+    [:a#drinks-link.menu-nav-item.clickable {:href "#drinks" :data-scroll true}
+;;     (svg-to-hiccup "html/assets/svg/drinks-sm.svg")
+     [:img.icon {:src "assets/img/drinks.png"}]]]
 
    
    [:div.content

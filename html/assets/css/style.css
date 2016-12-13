@@ -42,7 +42,6 @@ html {
 }
 
 body {
-    background-color: transparent;
 }
 
 .clickable {
@@ -119,26 +118,30 @@ body {
     text-align: justify;
 }
 
+
+.icon {
+    height: 100%;
+}
+
+
 .desktop {
+    display: auto;
 }
 
 .mobile {
     display: none;
 }
 
-.icon {
-    height: 100%;
-}
 
 @media screen and (max-width: 900px) {
     .content {
-	width: 100%
+	width: 100%;
 	padding: 0px 24px;
     }
 }
 
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
     .desktop {
 	display: none;
     }
