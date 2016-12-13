@@ -14,7 +14,7 @@
 
 (defn content []
   (html
-;;   (ham2)
+   ;;   (ham2)
    (ham "HOME" "#top"
         "MENÙ" "menu.html#food"
         "CHI SIAMO" "#chi-siamo"
@@ -39,9 +39,9 @@
     [:div.vspace-section1
      [:div.vcenter-section1
       [:div.ttr.centered.clickable {:onclick "window.location='menu.html#food';"}
-       [:div.m-icon.icon-plate
-;;        (svg-to-hiccup "html/assets/svg/plate.svg")
-        ]
+       [:div.m-icon
+        (svg-to-hiccup "html/assets/svg/plate.svg")
+        [:img.icon.mobile {:src "assets/img/plate.png"}]]
        [:div.m-title
         "MENÚ RISTO-PUB"]
        [:div.m-text-container
@@ -50,8 +50,8 @@
 
       [:div.ttr.clickable {:onclick "window.location='menu.html#beer';"}
        [:div.m-icon.icon-beer
-;;        (svg-to-hiccup "html/assets/svg/beer.svg")
-        ]
+        (svg-to-hiccup "html/assets/svg/beer.svg")
+        [:img.icon.mobile {:src "assets/img/beer.png"}]]
        [:div.m-title
         "BIRRE"]
        [:div.m-text-container
@@ -60,8 +60,8 @@
 
       [:div.ttr.clickable {:onclick "window.location='menu.html#drinks';"}
        [:div.m-icon.icon-drinks
-;;        (svg-to-hiccup "html/assets/svg/drinks.svg")
-        ]
+        (svg-to-hiccup "html/assets/svg/drinks.svg")
+        [:img.icon.mobile {:src "assets/img/drinks.png"}]]
        [:div.m-title
         "DRINK DIFFERENT"]
        [:div.m-text-container

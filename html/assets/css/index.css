@@ -380,13 +380,6 @@ ul {
     .vspace-fullm, .vspace-full {
 	height: 100%;
     }
-
-    .desktop {
-	display: none;
-    }
-    .mobile {
-	display: auto;
-    }
 }
 
 /*Normal Desktop*/
