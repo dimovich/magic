@@ -33,7 +33,7 @@
 
     [:div.month-c
      [:p#27-11-2016.event-title.overlay.text-left
-      "TORNEO BACKGAMMON"]
+      "Torneo Backgammon"]
      [:div.event-c
       [:p.event-date.text-left
        "27 Novembre 2016"]
@@ -43,7 +43,7 @@
 
 
      [:p#11-11-2016.event-title.overlay.text-left
-      "BAGNA CAUDA NIGHT"]
+      "Bagna Cauda Night"]
 
      [:div.event-c
       [:p.event-date.text-left
@@ -54,7 +54,7 @@
 
 
      [:p#04-11-2016.event-title.overlay.text-left
-      "FUNGHI NIGHT"]
+      "Funghi Night"]
 
      [:div.event-c
       [:p.event-date.text-left
@@ -107,7 +107,7 @@
      [:div.pic-right
       [:img {:src "assets/photo/reduced/e04.jpg"}]]
 
-     [:p.event-date.text-left
+     [:p.event-date.text-right
       "8 Settembre 2016"]
 
      [:p.event-text

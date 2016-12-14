@@ -19,3 +19,6 @@
       (js/Waypoint. (clj->js {:element anchor
                               :handler #(d/toggle-class! el "is-active")})))))
 
+
+
+(def days-in-moth [])
