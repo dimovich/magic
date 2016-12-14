@@ -140,8 +140,8 @@
 
       [:div {:width "100%"}
        [:div.ttr
-        [:img.clickable.hover {:src "assets/svg/map.svg"
-                               :onclick "location.href='https://goo.gl/maps/LQQfR12tExA2'"}]
+        [:a {:href "https://goo.gl/maps/LQQfR12tExA2"}
+         [:img.clickable.hover {:src "assets/svg/map.svg"}]]
         [:p.contact-text
          "Strada della Rezza, 87"
          [:br]

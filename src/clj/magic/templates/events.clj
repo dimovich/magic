@@ -32,7 +32,7 @@
      "ARCHIVIO EVENTI"]
 
     [:div.month-c
-     [:p#27-11-2016.event-title.text-left
+     [:p#27-11-2016.event-title.overlay.text-left
       "TORNEO BACKGAMMON"]
      [:div.event-c
       [:p.event-date.text-left
@@ -42,7 +42,7 @@
        "Ore: 9.15"]]
 
 
-     [:p#11-11-2016.event-title.text-left
+     [:p#11-11-2016.event-title.overlay.text-left
       "BAGNA CAUDA NIGHT"]
 
      [:div.event-c
@@ -53,7 +53,7 @@
        "Serata menù BAGNA CAUDA - € 25"]]
 
 
-     [:p#04-11-2016.event-title.text-left
+     [:p#04-11-2016.event-title.overlay.text-left
       "FUNGHI NIGHT"]
 
      [:div.event-c
@@ -66,7 +66,7 @@
 
 
     [:div.month-c
-     [:p.event-title.text-left
+     [:p.event-title.overlay.text-left
       "Dodo Harmonica Kid"]
 
      [:div.event-c
@@ -76,7 +76,7 @@
       [:p.event-text
        "Concerto live"]]
 
-     [:p.event-title.text-left
+     [:p.event-title.overlay.text-left
       "Castagnata"]
 
      [:div.event-c
@@ -87,7 +87,7 @@
        "Castagnata gratuita nel dehors con conumazione a piacere" [:br]
        "Ore: 18.00"]]
 
-     [:p.event-title.text-left
+     [:p.event-title.overlay.text-left
       "Senzatempo"]
 
      [:div.event-c
@@ -100,7 +100,7 @@
 
 
 
-    [:p.event-title.text-right
+    [:p.event-title.overlay.text-right
      "Fast Frank & The Hot Shout Blues"]
 
     [:div.event-c
@@ -116,7 +116,7 @@
       "Nel 2011 esce il suo cd d’esordio, \"Shakin' The Boogie\", seguito nel 2016 da \"A Place In The Evening\", registrato dal vivo nell’astigiano. Nel 2011 il video tratto da un suo brano, \"Daddy Wants You To Come Back Home\", con la regia di Piero Ali Passatore, è stato premiato al Videoclip Festival di Roma."]]
 
 
-    [:p.event-title.text-left
+    [:p.event-title.overlay.text-left
      "Eight o’Clock Blues"]
 
     [:div.event-c
@@ -132,7 +132,7 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
       "Ed è a seguito di questo collaudato sodalizio che i due bluesmen si propongono in talune situazion “ridotta”, con un repertorio che fonde i grandi classici del Chicago Blues, alcuni brani soul, folk blues e ballads, il tutto suonato in maniera “intima”, per poter far cogliere al pubblico tutto il significato dei pezzi proposti, senza però perdere in decisione e groove." [:br] [:br]
       "Il concerto è aperto a tutti e gratuito e la consumazione facoltativa. Vi aspettiamo!"]]
 
-    [:p.event-title.text-right
+    [:p.event-title.overlay.text-right
      "Big Harp & Juke Joint Blues"]
 
     [:div.event-c
@@ -148,7 +148,7 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
       "Il Juke Joint Blues è un esplosivo quartetto di musicisti appassionati e innamorati di quella musica che si suonava sulle rive del Mississipi e tra le strade della Louisiana negli anni 1950 e 1960. Il sound elettrico della band rende tuttavia questo genere slegato da ogni periodo storico, rendendolo sempre attuale;" [:br]
       "il repertorio comprende ritmi incalzanti, canzoni lente e ipnotiche, adatte al ballo tipico del Blues. Andy Cedrone alla batteria, Stefano Bad Finger al basso, Max Pizza alla chitarra, armonica e voce e Natale Chillè alla chitarra solista. Durante lo show potrebbero esserci ospiti che suoneranno una Blues Jam come prevede la cultura Blues."]]
     
-    [:p.event-title.text-left
+    [:p.event-title.text-left.overlay
      "Dodo Harmonica Kid"]
 
     [:div.event-c

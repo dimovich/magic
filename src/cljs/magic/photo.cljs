@@ -59,7 +59,7 @@
         :let [;;index
               idx (js/parseInt (d/attr el :index))
               ;;medium size
-              msrc (d/attr (aget (d/children el) 0) :src)
+              ;;msrc (d/attr (aget (d/children el) 0) :src)
               ;;big size
               src (d/attr el :href)
               ;;dimensions
@@ -69,7 +69,7 @@
                                        (.preventDefault e)
                                        (show-pswp idx)))]]
     {:src src
-     :msrc msrc
+     ;;:msrc msrc
      :w (js/parseInt w)
      :h (js/parseInt h)}))
 

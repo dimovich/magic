@@ -28,21 +28,20 @@
     border-radius: 5px;
     margin: 10px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .event-title {
   font-family : Essays1743;
-  font-size : 21px;
+  font-size : 25px;
   letter-spacing : 1.18px;
-  color : #231F20;
-  color : rgb(35, 31, 32);
-  mix-blend-mode: overlay;
+  padding-top: 1em;
 }
 
 
 .event-date {
   font-family : Essays1743;
-  font-size : 21px;
+  font-size : 24px;
   letter-spacing : 1.18px;
   color : #231F20;
   color : rgb(35, 31, 32);
@@ -69,19 +68,20 @@
 
 
 .pic-left, .pic-right {
-    margin-bottom: 1em;
-    margin-top: 2em;
+    margin: 1em;
+    margin-top: 4.6em;
+    
 }
 
 .pic-left {
     float: left;
-    margin-right: 1.5em;
+    margin-right: 2em;
 
 }
 
 .pic-right {
     float: right;
-    margin-left: 1.5em;
+    margin-left: 1em;
 }
 
 
@@ -91,5 +91,7 @@
 	margin: auto;
 	width: 100%;
 	text-align: center;
+	margin-bottom: 1em;
+	margin-top: 2em;
     }
 }

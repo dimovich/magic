@@ -60,7 +60,6 @@
 ;;     (svg-to-hiccup "html/assets/svg/drinks-sm.svg")
      [:img.icon {:src "assets/img/drinks.png"}]]]
 
-   
    [:div.content
     ;;
     ;; TOP DESC
@@ -76,7 +75,8 @@
     ;; MENU
     ;;
     [:div.menu-c.centered
-     [:div#food.menu-section
+     [:div#food.spacer]
+     [:div.menu-section
       [:p.menu-title
        [:br]
        "MENÙ RISTORANTE"]
@@ -181,7 +181,8 @@
         "Per eventuali intolleranze alimentari Vi invitiamo a consultare la tabella degli allergeni." [:br] [:br]
         "Restiamo a Vostra disposizione per ogni esigenza."]]]
 
-     [:div#beer.menu-section
+     [:div#beer.spacer]
+     [:div.menu-section
       [:p.menu-title
        [:br]
        "BIRRE"]
@@ -300,8 +301,9 @@
       (menu-item-b "ALC 6,2 %" "75,cl - 8,00")]
 
      [:br] 
-     
-     [:div#drinks.menu-section
+
+     [:div#drinks.spacer]
+     [:div.menu-section
       [:p.menu-title
        [:br]
        "DRINK DIFFERENT"]
