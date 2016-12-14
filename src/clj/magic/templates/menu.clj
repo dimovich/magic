@@ -50,15 +50,18 @@
    ;; MENU MENU
    ;;
    [:div#menu-nav.menu-nav.vhcenter-menu
-    [:a#food-link.menu-nav-item.clickable {:href "#food" :data-scroll true}
-;;     (svg-to-hiccup "html/assets/svg/plate-sm.svg")
-     [:img.icon {:src "assets/img/plate.png"}]]
-    [:a#beer-link.menu-nav-item.clickable  {:href "#beer" :data-scroll true}
-;;     (svg-to-hiccup "html/assets/svg/beer-sm.svg")
-     [:img.icon {:src "assets/img/beer.png"}]]
-    [:a#drinks-link.menu-nav-item.clickable {:href "#drinks" :data-scroll true}
-;;     (svg-to-hiccup "html/assets/svg/drinks-sm.svg")
-     [:img.icon {:src "assets/img/drinks.png"}]]]
+    [:div.menu-nav-item
+     [:a {:href "#food" :data-scroll true}
+      ;;     (svg-to-hiccup "html/assets/svg/plate-sm.svg")
+      [:img#food-link.icon {:src "assets/img/plate.png"}]]]
+    [:div.menu-nav-item
+     [:a {:href "#beer" :data-scroll true}
+      ;;     (svg-to-hiccup "html/assets/svg/beer-sm.svg")
+      [:img#beer-link.icon {:src "assets/img/beer.png"}]]]
+    [:div.menu-nav-item
+     [:a {:href "#drinks" :data-scroll true}
+      ;;     (svg-to-hiccup "html/assets/svg/drinks-sm.svg")
+      [:img#drinks-link.icon {:src "assets/img/drinks.png"}]]]]
 
    [:div.content
     ;;
@@ -78,7 +81,6 @@
      [:div#food.spacer]
      [:div.menu-section
       [:p.menu-title
-       [:br]
        "MENÙ RISTORANTE"]
 
       [:p.menu-section-title
@@ -184,7 +186,6 @@
      [:div#beer.spacer]
      [:div.menu-section
       [:p.menu-title
-       [:br]
        "BIRRE"]
 
       [:div.menu-desc-top
@@ -305,7 +306,6 @@
      [:div#drinks.spacer]
      [:div.menu-section
       [:p.menu-title
-       [:br]
        "DRINK DIFFERENT"]
 
       [:p.menu-title.overlay
