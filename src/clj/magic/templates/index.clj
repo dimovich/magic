@@ -197,6 +197,3 @@
 ;; http://alistapart.com/article/holygrail
 ;; http://stackoverflow.com/questions/15172520/advantages-of-using-displayinline-block-vs-floatleft-in-css
 
-
-;; FIXME:
-;; vertical moving on resize
