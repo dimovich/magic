@@ -75,8 +75,17 @@
      (reload)
      (cljs-repl)
      (cljs :compiler-options {:out-file output-to
-                              :optimizations optimizations}
-           :source-map true)
-
+                              :optimizations optimizations})
      (target :dir #{"target"}))))
+
+
+
+
+
+(deftask release []
+  (comp
+   (cljs :compiler-options {:out-file (:output-to defaults)
+                            :optimizations :advanced})
+
+   (target :dir #{"target"})))
 

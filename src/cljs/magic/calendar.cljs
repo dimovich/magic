@@ -6,7 +6,6 @@
   (:import goog.date.Date))
 
 
-
 (def date (Date.))
 
 (def month-name ["January" "February" "March" "April" "May"
@@ -63,7 +62,7 @@
                                        (d/set-text! month-el (str month-name " " year)))]
                            
                            (setup @current-month)
-    
+                           
                            (d/listen! (d/sel1 :#prev-month)
                                       :click
                                       (fn [e]
