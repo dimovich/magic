@@ -10,7 +10,7 @@
   (ham/setup-ham)
   (p/init-photo)
   (u/smooth-scroll)
-  (u/init-calendar "/assets/events.txt"
+  (u/init-calendar "assets/events.txt"
                    :#month-name
                    :#calendar-container))
 
