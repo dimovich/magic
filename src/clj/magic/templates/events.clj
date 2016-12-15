@@ -53,7 +53,7 @@
        "Serata menù BAGNA CAUDA - € 25"]]
 
 
-     [:p#04-11-2016.event-title.overlay.text-left
+     [:p#4-11-2016.event-title.overlay.text-left
       "Funghi Night"]
 
      [:div.event-c

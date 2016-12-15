@@ -21,7 +21,8 @@
                  [cljsjs/waypoints "4.0.0-0"]
                  [cljsjs/smooth-scroll "9.1.4-0"]
                  [prismatic/dommy "1.1.0"]
-                 [hipo "0.5.2"]])
+                 [hipo "0.5.2"]
+                 [cljs-ajax "0.5.8"]])
 
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[pandeiro.boot-http :refer [serve]]

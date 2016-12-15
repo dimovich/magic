@@ -10,7 +10,7 @@
 
 (defn icon [c id l]
   [c
-   [:div.s-icon.clickable {:onclick "window.location='" l "';"}
+   [:a.s-icon {:href l}
     (svg-to-hiccup (str "html/assets/svg/" id ".svg"))
     [:img.icon.mobile.hover {:src (str "assets/img/" id ".png")}]]])
 
@@ -103,18 +103,13 @@
       "Archivio & Calendario"]
      [:div.calendar-container
       [:div.month
-       [:div.prev "&#10094;"]
-       [:div.next "&#10095;"]
-       [:div.calendar-month.text-center
+       [:a#prev-month.prev {:href "#"} "&#10094;"]
+       [:a#next-month.next {:href "#"} "&#10095;"]
+       [:div#month-name.calendar-month.text-center
         "Novembre 2016"]]
-      [:div.calendar-day-c
-       [:ul.calendar-day
-        (gen-month-days {4 {:name "FUNGHI NIGHT"
-                            :link "04-11-2016"}
-                         11 {:name "BAGNA CAUDA NIGHT"
-                             :link "11-11-2016"}
-                         27 {:name "TORNEO BACKGAMMON"
-                             :link "27-11-2016"}})]]]]
+      [:div#calendar-container.calendar-day-c
+       #_[:ul.calendar-day
+          (gen-month-days )]]]]
 
 
     ;;
@@ -159,7 +154,7 @@
 
        
        [:div.c-social-c.centered
-        (icon :div.tt "facebook" "" #_"https://www.facebook.com/La-Nave-dei-Folli-1140174652712678/")
+        (icon :div.tt "facebook" "https://www.facebook.com/La-Nave-dei-Folli-1140174652712678/")
         (icon :div.tt "whatsapp" "whatsapp://send?text=3336210814")
         (icon :div.tt "telegram" "https://telegram.me/3336210814")]]]]
     

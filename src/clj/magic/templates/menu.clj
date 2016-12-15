@@ -81,6 +81,7 @@
      [:div#food.spacer]
      [:div.menu-section
       [:p.menu-title
+       [:br]
        "MENÙ RISTORANTE"]
 
       [:p.menu-section-title
