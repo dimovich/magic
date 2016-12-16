@@ -95,4 +95,7 @@
 	margin-bottom: 1em;
 	margin-top: 2em;
     }
+    .events-main-title {
+	text-align: left;
+    }
 }

@@ -19,7 +19,7 @@
     top: 20vh;
     left: calc((100vw - 970px) / 4 + 5px);
     overflow: hidden;
-    z-index: 9;
+    z-index: 8;
     background-color: transparent;
 }
 
@@ -31,7 +31,7 @@
     width: 100%;
     vertical-align: center;
     text-align: left;
-    z-index: 11;
+    z-index: 9;
     box-sizing: border-box;
 }
 
@@ -200,7 +200,6 @@ a:hover img {
     .content {
 	padding: 0px 10px;
     }
-
 
     .menu-section-title {
 	mix-blend-mode: normal;

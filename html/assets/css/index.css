@@ -112,6 +112,10 @@
     padding: 0;
 }
 
+.center-plate {
+    padding-left: 20px;
+}
+
 .m-icon:hover {
 }
 
@@ -158,7 +162,6 @@
     border: 2px solid black;
     border-radius: 5px;
 }
-
 
 .e-text {
     line-height: 1.3em;
@@ -388,7 +391,7 @@
 
     /*menu*/
     .vcenter-section1 {
-	padding-top: 40px;
+	padding-top: 30px;
     }
 
     .vspace-section1 {
@@ -424,7 +427,14 @@
 
 
 /*2column events*/
-@media screen and (max-width: 650px) {
+/*MOBILE*/
+@media screen and (max-width: 648px) {
+    .top-logo {
+	height: 75%;
+    }
+    .top-logo-container {
+	z-index: 100;
+    }
     .m-icon {
 	height: 60px;
     }
@@ -451,6 +461,11 @@
 	margin-top: 20px;
 	margin-bottom: 60px;
     }
+    /*menu*/
+    .vcenter-section1 {
+	padding-top: 20px;
+    }
+
 }
 
 

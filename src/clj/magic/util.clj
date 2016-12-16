@@ -30,7 +30,7 @@
         cy (year t)]
     [:ul
      (for [i (range 1 31 #_(inc (number-of-days-in-the-month t)))
-           (:let [id (str i "-" cm "-" cy)])]
+           :let [id (str i "-" cm "-" cy)]]
        [(keyword (str "li#" id))
         [:div.day i]
         [:div.event
