@@ -52,8 +52,8 @@
         [:img.icon.mobile.center-plate {:src "assets/img/plate.png"}]]
        [:div.m-title
         "MENÚ RISTO-PUB"]
-       [:div.m-text-container
-        [:span.m-text.desktop
+       [:div.m-text-container.desktop
+        [:span.m-text
          "Scopri le nostre proposte, prova i nostri piatti preparati con ingredienti freschi del territorio"]]]
 
       [:div.ttr.clickable {:onclick "window.location='menu.html#beer';"}
@@ -62,8 +62,8 @@
         [:img.icon.mobile {:src "assets/img/beer.png"}]]
        [:div.m-title
         "BIRRE"]
-       [:div.m-text-container
-        [:span.m-text.desktop
+       [:div.m-text-container.desktop
+        [:span.m-text
          "Vieni a degustare la nostra selezione di etichette italiane ed internazionali"]]]
 
       [:div.ttr.clickable {:onclick "window.location='menu.html#drinks';"}
@@ -72,8 +72,8 @@
         [:img.icon.mobile {:src "assets/img/drinks.png"}]]
        [:div.m-title
         "DRINK DIFFERENT"]
-       [:div.m-text-container
-        [:span.m-text.desktop
+       [:div.m-text-container.desktop
+        [:span.m-text
          "Scopri la nostra riserva di distillati da tutto il mondo, le nostre bibite e gli infusi biologici"]]]]]
 
 

@@ -112,6 +112,10 @@
     padding: 0;
 }
 
+.center-plate {
+    padding-left: 20px;
+}
+
 .m-icon:hover {
 }
 
@@ -387,7 +391,7 @@
 
     /*menu*/
     .vcenter-section1 {
-	padding-top: 40px;
+	padding-top: 30px;
     }
 
     .vspace-section1 {
@@ -426,10 +430,11 @@
 /*MOBILE*/
 @media screen and (max-width: 648px) {
     .top-logo {
-	height: 50%;
-	margin-top: 50px;
+	height: 75%;
     }
-
+    .top-logo-container {
+	z-index: 10;
+    }
     .m-icon {
 	height: 60px;
     }
@@ -456,6 +461,15 @@
 	margin-top: 20px;
 	margin-bottom: 60px;
     }
+    /*menu*/
+    .vcenter-section1 {
+	padding-top: 20px;
+    }
+    .m-title {
+	padding-bottom: 0;
+	margin-bottom: 30px;
+    }
+
 }
 
 

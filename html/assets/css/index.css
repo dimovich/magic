@@ -433,7 +433,7 @@
 	height: 75%;
     }
     .top-logo-container {
-	z-index: 100;
+	z-index: 10;
     }
     .m-icon {
 	height: 60px;
@@ -464,6 +464,10 @@
     /*menu*/
     .vcenter-section1 {
 	padding-top: 20px;
+    }
+    .m-title {
+	padding-bottom: 0;
+	margin-bottom: 30px;
     }
 
 }
