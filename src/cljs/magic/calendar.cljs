@@ -8,9 +8,9 @@
 
 (def date (Date.))
 
-(def month-name ["January" "February" "March" "April" "May"
-                 "June" "July" "August" "September" "October"
-                 "November" "December"])
+(def month-name ["Gennaio" "Febbraio" "Marzo" "Aprile" "Maggio"
+                  "Giugno" "Luglio" "Agosto" "Settembre" "Ottobre"
+                  "Novembre" "Dicembre"])
 
 
 
@@ -27,13 +27,14 @@
 
 (defn- gen-calendar [evts [year month days _]]
   (h/create
-   [:ul.calendar-day
+   [:ul
     (let [month (inc month)]
       (for [i (range 1 (inc days))
             :let [id (str i "-" month "-" year)]]
-        [(keyword (str "li#" id)) i
-         [:div.c-day-c
-          [:a.c-event.overlay {:href (str "events.html#" id)} (evts id)]]]))]))
+        [(keyword (str "li#" id))
+         [:div.day i]
+         [:div.event
+          [:a.overlay {:href (str "events.html#" id)} (evts id)]]]))]))
 
 
 (def current-month (atom (get-current-month)))

@@ -28,10 +28,13 @@
         t (today)
         cm (month t)
         cy (year t)]
-    (for [i (range 1 31 #_(inc (number-of-days-in-the-month t)))]
-      [(keyword (str "li#" cy "-" cm "-" i)) i
-       [:div.c-day-c
-        [:a.c-event.overlay {:href (str "events.html#" (:link (evts i)))} (:name (evts i))]]])))
+    [:ul
+     (for [i (range 1 31 #_(inc (number-of-days-in-the-month t)))
+           (:let [id (str i "-" cm "-" cy)])]
+       [(keyword (str "li#" id))
+        [:div.day i]
+        [:div.event
+         [:a.overlay {:href (str "events.html#" id)} (evts id)]]])]))
 
 
 
@@ -115,3 +118,17 @@
             
              (apply concat r)))]))
 
+
+
+
+
+(defn copyright []
+  [:div.footer.copyright-text.overlay
+   [:div.left
+    [:p.text-left
+     "© 2016 La nave dei folli"
+     [:br]
+     "c.f./p.iva (Mistrin s.r.l.s - 11479100015"]]
+   [:div.right
+    [:p
+     "Webdesign: MAGIdesign"]]])

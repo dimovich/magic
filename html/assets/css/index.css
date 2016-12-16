@@ -37,16 +37,16 @@
 }
 
 .top-logo-container {
-    height: 175.6px;
-    width: 649;
-    margin-top: 27.5px;
+    height: 175px;
+    margin-top: 30px;
     position: relative;
     pointer-events:none;
+    margin: auto;
 }
 
 .top-border {
     position:absolute;
-    top:0;
+    top:5px;
     left: 0;
     right:0;
     bottom: 0;
@@ -89,22 +89,6 @@
     text-decoration: underline;
 }
 
-/*
-.clickable .m-title:before {
-    content: "";
-    position: absolute;
-    width: 85%;
-    height: 2px;
-    bottom: 0;
-    left: 20px;
-    background-color: #000;
-    visibility: hidden;
-}
-
-.clickable:hover .m-title:before {
-  visibility: visible;
-}
-*/
 
 .m-text-container {
     width: 242.309px;
@@ -209,7 +193,7 @@
 }
 
 .month {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 10px;
     width: 100%;
     font-size : 23px;
@@ -230,27 +214,25 @@
     color: black;
     font-size: 33px;
     outline: none;
+    margin: 0;
+    padding: 0;
 }
 
-.month a:hover {
+/*.month a:hover {
     color: rgb(184,86,2);
+}*/
+
+
+.calendar {
+    position: relative;
+    width: 100%;
+    font-family : Essays1743;
+    font-size : 21px;
+    letter-spacing : 1.03px;
 }
 
-.calendar-day {
-  font-family : Essays1743;
-  font-size : 21px;
-  letter-spacing : 1.03px;
-  color : #020202;
-  color : rgb(2, 2, 2);
-}
 
-
-.calendar-day-c {
-    padding-right: 10px;
-    margin-left: -10px;
-}
-
-ul {
+.calendar ul {
     list-style-type: none;
     -moz-column-count: 4;
     -moz-column-gap: 2px;
@@ -258,42 +240,55 @@ ul {
     -webkit-column-gap: 2px;
     column-count: 4;
     column-gap: 2px;
-    padding: 0;
+    padding: 5px;
+    padding-right: 10px;
+    padding-bottom: 0;
 }
 
-.calendar-day li {
+.calendar li {
     list-style-type: none;
-    min-width: 25%;
-    text-align: right;
-    line-height: 1.05em;
+    text-align: left;
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
 }
 
-.c-day-c {
-    width: 160px;
-    overflow: hidden;
-    display: inline-block;
+.day {
+    float: left;
+    text-align: right;
+    font-size: 21px;
+    width: 20px;
+    color : #020202;
+    color : rgb(2, 2, 2);
+}
+
+.event {
+    font-size : 11px;
     text-align: left;
-    padding-left: 0.3em;
     border-style: solid;
     border-width: 1px;
     border-top:0;
     border-left:0;
     border-right:0;
-    border-image: url("../img/border01.png") 1;
+    border-image: url("../img/border01.png") 2;
+    margin-left: 30px;
+    height: 2.5em;
+    overflow: visible;
 }
 
-
-
-.c-event {
+.calendar a {
     font-family : Essays1743;
     font-size : 11px;
     font-weight: bold;
     letter-spacing : 0.41px;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 0.5em;
+    bottom: 0.4em;
     color : #000000;
     color : rgb(0, 0, 0);
-    text-decoration: none;
 }
-
 
 
 .restaurant-title {
@@ -414,13 +409,13 @@ ul {
 
 /*3column events*/
 @media screen and (max-width: 945px) and (min-width: 651px) {
-    ul {
+    .calendar ul {
 	-moz-column-count: 3;
 	-webkit-column-count: 3;
 	column-count: 3;
     }
 
-    .calendar-day li {
+    .calendar li {
 	min-width: 33%;
     }
 
@@ -438,16 +433,16 @@ ul {
 	padding-top: 0;
 	min-height: 650px;
     }
-    ul {
+    .calendar ul {
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
 	column-count: 2;
     }
-    .calendar-day li {
+    .calendar li {
 	min-width: 50%;
     }
 
-    .m-title, .section-title, .calendar-title, .c-event {
+    .m-title, .section-title, .calendar-title, .calendar a {
 	mix-blend-mode: normal;
 	color: rgb(184,86,2);
     }
@@ -461,23 +456,12 @@ ul {
 
 /*1column events*/
 @media screen and (max-width: 460px) {
-    ul {
+    .calendar ul {
 	-moz-column-count: 1;
 	-webkit-column-count: 1;
 	column-count: 1;
     }
-    .calendar-day li {
-	min-width: 100%;
-	text-align: left;
-    }
-    .calendar-day-c {
-	padding-left: 20px;
-	margin: 0;
-    }
-    .c-day-c {
-	position: absolute;
-	width: 200px;
-	margin-left: 15px;
-	height: 1em;
+    .calendar a {
+	font-size : 14px;
     }
 }

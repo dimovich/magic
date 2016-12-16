@@ -3,7 +3,8 @@
                                             html-content]]
             [hiccup.core :refer [html]]
             [magic.util :refer [svg-to-hiccup
-                                ham]]))
+                                ham
+                                copyright]]))
 
 
 ;; FOOD
@@ -170,15 +171,7 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
     ;;
     ;; COPYRIGHT
     ;;
-    [:div.footer.copyright-text.overlay
-     [:div.left
-      [:p.text-left
-       "© 2016 La nave dei folli"
-       [:br]
-       "c.f./p.iva (Mistrin s.r.l.s - 11479100015"]]
-     [:div.right
-      [:p.text-right
-       "Webdesign: MAGIDesign"]]]]))
+    (copyright)]))
 
 (deftemplate events "events.html" []
   [:body :div#wrap] (html-content (content)))

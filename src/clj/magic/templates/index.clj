@@ -5,7 +5,8 @@
             [magic.util :refer [svg-to-hiccup
                                 gen-month-days
                                 ham
-                                photos]]))
+                                photos
+                                copyright]]))
 
 
 (defn icon [c id l]
@@ -107,9 +108,9 @@
        [:a#next-month.next {:href "#"} "&#10095;"]
        [:div#month-name.calendar-month.text-center
         "Novembre 2016"]]
-      [:div#calendar-container.calendar-day-c
-       #_[:ul.calendar-day
-          (gen-month-days )]]]]
+      [:div#calendar-container.calendar
+       [:ul
+          (gen-month-days {"4-11-2016" "FUNGHI NIGHT" "11-11-2016" "BAGNA CAUDA NIGHT" "27-11-2016" "TORNEO BACKGAMMON"})]]]]
 
 
     ;;
@@ -161,15 +162,9 @@
     ;;
     ;; COPYRIGHT
     ;;
-    [:div.footer.copyright-text.overlay
-     [:div.left
-      [:p.text-left
-       "© 2016 La nave dei folli"
-       [:br]
-       "c.f./p.iva (Mistrin s.r.l.s - 11479100015"]]
-     [:div.right
-      [:p
-       "Webdesign: MAGIDesign"]]]]))
+    (copyright)]))
+
+
 
 
 (deftemplate index "index.html" []

@@ -3,7 +3,8 @@
                                             html-content]]
             [hiccup.core :refer [html]]
             [magic.util :refer [svg-to-hiccup
-                                ham]]))
+                                ham
+                                copyright]]))
 
 
 ;; FOOD
@@ -17,13 +18,27 @@
 
 
 ;; BEER
-(defn menu-item-b [title price]
+(defn menu-item-b [title [s m l]]
+  [:div.menu-item-c
+   [:p.menu-item-left.menu-item-text
+    title]
+   [:p.menu-item-right.menu-item-text.desktop
+    (str "piccola - " s " |   media - " m " |   litro - " l)]
+   [:p.menu-item-right.menu-item-text.mobile
+    (str "piccola - " s) [:br]
+    (str "media - " m) [:br]
+    (str  "litro - " l)]
+   [:p.menu-item-middle]])
+
+
+(defn menu-item-b2 [title price]
   [:div.menu-item-c
    [:p.menu-item-left.menu-item-text
     title]
    [:p.menu-item-right.menu-item-text
     price]
-   [:p.menu-item-middle.250px]])
+   [:p.menu-item-middle]])
+
 
 ;;ANALCOOLICI
 (defn menu-item-a [price]
@@ -204,7 +219,7 @@
        "Birrificio: Schönram (Monaco di Baviera)" [:br]
        "Stile: Helles"]
       
-      (menu-item-b "ALC. 5 %" "piccola - 3,00   |   media - 5,00   |   litro - 10,00")
+      (menu-item-b "ALC. 5 %" ["3,00" "5,00" "10,00"] )
 
       [:p.menu-section-title
        "PUNK IPA"]
@@ -215,7 +230,7 @@
        "Birrificio: Brewdog (Scozia)" [:br]
        "Stile: Ipa (Indian pale ale)"]
 
-      (menu-item-b "ALC. 5,4 %" "piccola - 3,50   |   media - 5,50   |   litro - 11,00")
+      (menu-item-b "ALC. 5,4 %" ["3,50" "5,50" "11,00"])
 
 
       [:p.menu-section-title
@@ -227,7 +242,7 @@
        "Birrificio: Beer selection (progetto irriverence)" [:br]
        "Stile: Trippel belgian ale"]
 
-      (menu-item-b "ALC. 8,5 %" "piccola - 3,00   |   media - 5,00   |   litro - 10,00")
+      (menu-item-b "ALC. 8,5 %" ["3,00" "5,00" "10,00"] )
 
       [:p.menu-section-title
        "MILOUD"]
@@ -237,7 +252,7 @@
        "Birrificio: Lariano (Lecco)" [:br]
        "Stile: Bitter Ale"]
 
-      (menu-item-b "ALC. 4 %" "piccola - 3,00   |   media - 5,00   |   litro - 10,00")
+      (menu-item-b "ALC. 4 %" ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "MAGNUS (33 cl)"]
@@ -247,7 +262,7 @@
        "Birrificio: Croce di Malto (Novara)" [:br]
        "Stile: Double Belgian Ale"]
 
-      (menu-item-b "ALC. 7,3 %" "piccola - 3,00   |   media - 5,00   |   litro - 10,00")
+      (menu-item-b "ALC. 7,3 %"  ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "ANTANI"]
@@ -257,7 +272,7 @@
        "Birrificio: Fidenza" [:br]
        "Stile: Belgian ale"]
 
-      (menu-item-b "ALC. 6,0 %" "piccola - 3,00   |   media - 5,00   |   litro - 10,00")
+      (menu-item-b "ALC. 6,0 %" ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "RESET"]
@@ -267,7 +282,7 @@
        "Birrificio: Rurale a Desio (MB)" [:br]
        "Stile: Amber Ale"]
 
-      (menu-item-b "ALC. 5,6 %" "piccola - 3,00   |   media - 5,00   |   litro - 10,00")
+      (menu-item-b "ALC. 5,6 %" ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "TEMPORIS"]
@@ -277,7 +292,7 @@
        "Birrificio: Croce di malto (Novara)" [:br]
        "Stile: Saison"]
 
-      (menu-item-b "ALC. 6,8 %" "piccola - 3,00   |   media - 5,00   |   litro - 10,00")
+      (menu-item-b "ALC. 6,8 %" ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "LA ROSSA"]
@@ -287,7 +302,7 @@
        "Birrificio: La Tresca (Novara)" [:br]
        "Stile: Bock"]
 
-      (menu-item-b "ALC. 6,2 %" "piccola - 3,00   |   media - 5,00   |   litro - 10,00")
+      (menu-item-b "ALC. 6,2 %" ["3,00" "5,00" "10,00"])
 
       [:p.menu-title.overlay
        "II. IN BOTTIGLIA"]
@@ -300,7 +315,7 @@
        "Birrificio: Toccalmatto (Parma)" [:br]
        "Stile: Belgian pale ale"]
 
-      (menu-item-b "ALC 6,2 %" "75,cl - 8,00")]
+      (menu-item-b2 "ALC 6,2 %" "75,cl - 8,00")]
 
      [:br] 
 
@@ -342,9 +357,7 @@
       (menu-item-f "Coca-cola zero (33cl)" "3,00")
       (menu-item-f "Bibite Galvanina BIO  (35,5cl)" "3,50")
       
-      [:p.menu-item-text3
-       "Cola - aranciata bionda - aranciata rossa - gazzosa - tonica -"]
-      (menu-item-f "ginger - chinotto - thè freddo limone❘pesca - Succhi di frutta BIO" "3,50")
+      (menu-item-f [:div.menu-item-text "Cola - aranciata bionda - aranciata rossa - gazzosa - tonica - ginger - chinotto - thè freddo limone❘pesca - Succhi di frutta BIO"]  "3,50")
 
       [:p.menu-title.overlay
        "ALCOLICI"]
@@ -423,15 +436,7 @@
     ;;
     ;; COPYRIGHT
     ;;
-    [:div.footer.copyright-text.overlay
-     [:div.left
-      [:p
-       "© 2016 La nave dei folli"
-       [:br]
-       "c.f./p.iva (Mistrin s.r.l.s - 11479100015"]]
-     [:div.right
-      [:p
-       "Webdesign: MAGIDesign"]]]]))
+    (copyright)]))
 
 (deftemplate menu "menu.html" []
   [:body :div#wrap] (html-content (content)))
