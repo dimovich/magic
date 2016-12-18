@@ -1,7 +1,8 @@
 (ns magic.util
   (:require [dommy.core :as d]
             [cljsjs.smooth-scroll]
-            [cljsjs.waypoints]))
+            [cljsjs.waypoints]
+            [cljsjs.clipboard]))
 
 
 (defn get-width! [k]
@@ -33,3 +34,7 @@
 
 
 
+(defn clipboard [el]
+  (let [el (d/sel1 el)]
+    (js/Clipboard. el)
+    (d/listen! el :click #(js/alert "WhatsApp ID copied to clipboard."))))

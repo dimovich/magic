@@ -10,6 +10,20 @@
     padding-top: 20px;
 }
 
+
+.g-slider {
+    display: inline-block;
+    transition-property: margin-left;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    margin-left: 0;
+}
+
+.g-container .g-slider:hover {
+    opacity: 1;
+}
+
+
 .g-container .image-wrap {
     display: inline-block;
     height: 20em;
@@ -42,8 +56,6 @@
 
 
 
-
-
 a.gprev, a.gnext {
     height: 100px;
     position:absolute;
@@ -69,17 +81,6 @@ a.gprev:hover,a.gnext:hover {
     background: #000 url('../img/sprite.png') no-repeat -167px 25px;
 }
 
-.g-slider {
-    display: inline-block;
-    transition-property: margin-left;
-    transition-duration: 0.8s;
-    transition-timing-function: ease;
-    margin-left: 0;
-}
-
-.g-container .g-slider:hover {
-    opacity: 1;
-}
 
 
 

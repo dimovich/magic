@@ -9,9 +9,10 @@
                                 copyright]]))
 
 
-(defn icon [c id l]
+(defn icon [& [c id l clp]]
   [c
-   [:a.s-icon {:href l}
+   [(keyword (str "a.s-icon" (when clp ".clp"))) {:href l
+                                                  :data-clipboard-text clp}
     (svg-to-hiccup (str "html/assets/svg/" id ".svg"))
     [:img.icon.mobile.hover {:src (str "assets/img/" id ".png")}]]])
 
@@ -81,6 +82,7 @@
     ;; CHI SIAMO
     ;;
     [:div#chi-siamo.vspace-full.vcenter-section2
+     [:div.spacer]
      [:p.section-title.overlay
       "CHI SIAMO"]
      [:p.section-text {:style "text-align: justify;"}
@@ -95,6 +97,7 @@
     ;; EVENTI
     ;;
     [:div#events.vspace-full.vcenter-section3
+     [:div.spacer]
      [:p.section-title.overlay
       "EVENTI"]
      [:div.section-text.text-center
@@ -112,13 +115,14 @@
         "Novembre 2016"]]
       [:div#calendar-container.calendar
        [:ul
-          (gen-month-days {"4-11-2016" "FUNGHI NIGHT" "11-11-2016" "BAGNA CAUDA NIGHT" "27-11-2016" "TORNEO BACKGAMMON"})]]]]
+        (gen-month-days {"4-11-2016" "FUNGHI NIGHT" "11-11-2016" "BAGNA CAUDA NIGHT" "27-11-2016" "TORNEO BACKGAMMON"})]]]]
 
 
     ;;
     ;; GALLERIA
     ;;
     [:div#gallery.vspace-full.vcenter-section4
+     [:div.spacer]
      [:p.text-center.section-title.overlay
       "GALLERIA"]
      (photos "assets/photo")]
@@ -128,6 +132,7 @@
     ;;
     [:div#contacts.vspace-fullm
      [:div.vcenter-section5
+      [:div.spacer]
       [:p.section-title.overlay
        "CONTATTI"]
       [:p.restaurant-title
@@ -155,10 +160,10 @@
         [:p.contact-text {:style "padding-top: 10px;"}
          "info@lanavedeifolli.com"]]
 
-       
+
        [:div.c-social-c.centered
         (icon :div.tt "facebook" "https://www.facebook.com/La-Nave-dei-Folli-1140174652712678/")
-        (icon :div.tt "whatsapp" "whatsapp://send?text=3336210814")
+        (icon :div.tt "whatsapp" "whatsapp://send?text=3336210814" "3336210814")
         (icon :div.tt "telegram" "https://telegram.me/3336210814")]]]]
     
     ;;

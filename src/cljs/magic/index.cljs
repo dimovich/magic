@@ -10,6 +10,7 @@
   (h/setup-ham)
   (p/init-photo)
   (u/smooth-scroll)
+  (u/clipboard :.clp)
   (c/init-calendar "assets/events.txt"
                    :#month-name
                    :#calendar-container))

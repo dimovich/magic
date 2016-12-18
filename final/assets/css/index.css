@@ -20,7 +20,7 @@
 
 /*events*/
 .vcenter-section3 {
-    padding-top: calc((100vh - 560px) / 4);
+    padding-top: calc((100vh - 540px) / 4);
 
 }
 
@@ -31,9 +31,7 @@
 
 /*contacts*/
 .vcenter-section5 {
-    padding-top: calc((100vh - 690px) / 2);
-    min-height: 690px;
-    padding-bottom: 80px;
+    padding-top: calc((100vh - 540px) / 4);
 }
 
 .top-logo-container {
@@ -119,6 +117,7 @@
 .m-icon:hover {
 }
 
+
 .section-title {
     font-family : Essays1743, Verdana, Geneva, sans-serif, times;
     font-size : 26px;
@@ -187,12 +186,12 @@
 }
 
 .calendar-month {
-  font-family : Essays1743;
-  font-size : 21px;
-  letter-spacing : 1.18px;
-  color : #231F20;
-  color : rgb(35, 31, 32); 
-  text-decoration : underline;
+    font-family : Essays1743;
+    font-size : 21px;
+    letter-spacing : 1.18px;
+    color : #231F20;
+    color : rgb(35, 31, 32); 
+    text-decoration : underline;
 }
 
 .month {
@@ -221,10 +220,6 @@
     padding: 0;
 }
 
-/*.month a:hover {
-    color: rgb(184,86,2);
-}*/
-
 
 .calendar {
     position: relative;
@@ -246,6 +241,7 @@
     padding: 5px;
     padding-right: 10px;
     padding-bottom: 0;
+    transition: 0.5s;
 }
 
 .calendar li {
@@ -428,7 +424,7 @@
 
 /*2column events*/
 /*MOBILE*/
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 640px) {
     .top-logo {
 	height: 75%;
     }
@@ -439,10 +435,6 @@
 	height: 60px;
     }
     /*events*/
-    .vcenter-section3 {
-	padding-top: 0;
-	min-height: 650px;
-    }
     .calendar ul {
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
@@ -468,6 +460,20 @@
     .m-title {
 	padding-bottom: 0;
 	margin-bottom: 30px;
+    }
+
+    .contact-text
+    {
+	margin-top: 0px;
+    }
+
+    .restaurant-title {
+	margin: 0px;
+    }
+
+    .section-title {
+	margin: 0px;
+	padding-top: 0px;
     }
 
 }
