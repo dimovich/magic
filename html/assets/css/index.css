@@ -164,7 +164,7 @@
 }
 
 .e-text {
-    line-height: 1.3em;
+    max-width: 33em;
 }
 
 
@@ -274,7 +274,7 @@
     border-image: url("../img/border01.png") 2;
     margin-left: 30px;
     height: 2.5em;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .calendar a {
@@ -288,6 +288,7 @@
     bottom: 0.4em;
     color : #000000;
     color : rgb(0, 0, 0);
+    white-space: nowrap;
 }
 
 

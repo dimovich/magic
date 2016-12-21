@@ -42,22 +42,51 @@
      [:div.event-c
       [:p.event-date.text-left
        "31 Dicembre 2016"]
-      [:p.event-text
-       "Vi presentiamo il nostro menù di Capodanno! Per prenotazioni chiamare il numero 333 621 08 14"]]
+      [:p.event-text.text-left
+       "Vi presentiamo il nostro menù di Capodanno! Per prenotazioni chiamare il numero " [:span {:style "white-space:nowrap;"} "333 621 08 14."]]
+      [:ul.event-text
+       [:li "Lardo nostrano con castagne al miele"]
+       [:li "Carpaccio di vitella con bagna caòda"]
+       [:li "Sformato di cardi al gorgonzola"]
+       [:li "Risotto al nero di seppia e capesante e Tagliatelle al ragù di cinghiale"]
+       [:li "Cosciotto di maiale al melograno e arrosticini di agnello alla menta"]
+       [:li "Patate al forno"]
+       [:li "Tiramisù"]
+       [:li "Caffè"]]
+
+      [:p.event-text.text-left
+       "Prezzo a persona: € 60,00 con musica live & bevande incluse" [:br]
+       "Prezzo eventuale menù bimbi: € 20,00"]
+      #_[:p.event-text [:a {:href "https://goo.gl/qujU5l"} "More information..."]]]
 
      
      [:p#23-12-2016.event-title.overlay.text-left
       "Marine Band (Blues)"]
      [:div.event-c
-      [:div.pic-left
-       [:img {:src "assets/photo/reduced/e04.jpg"}]]
+      [:div.pic-center
+       [:img {:src "assets/photo/reduced/e06.jpg"}]]
 
       [:p.event-date.text-left
        "23 Dicembre 2016"]
 
       [:p.event-text
-       "La Marine Band è uno dei pochi gruppi italiani specializzati nel suonare blues acustico. Il loro repertorio ripercorre la storia del blues, dagli anni '20 fino al Rock-Blues dei nostri giorni; gli autori vanno da Robert Johnson, Muddy Waters, a Jimi Hendrix, Chuck Berry, Eric Clapton. In questi anni di attività la Marine Band può vantare numerosi concerti, eseguiti in giro per l'Italia in molti prestigiosi locali e in varie feste di piazza." [:br]
-       "Ore: 22.00"]]]
+       "La Marine Band è uno dei pochi gruppi italiani specializzati nel suonare blues acustico. Il loro repertorio ripercorre la storia del blues, dagli anni '20 fino al Rock-Blues dei nostri giorni; gli autori vanno da Robert Johnson, Muddy Waters, a Jimi Hendrix, Chuck Berry, Eric Clapton. In questi anni di attività la Marine Band può vantare numerosi concerti, eseguiti in giro per l'Italia in molti prestigiosi locali e in varie feste di piazza." [:br] [:br]
+       "Ore: 22.00"]]
+
+
+     [:p#2-12-2016.event-title.overlay.text-right
+      "Paul Demontis (Blues)"]
+     [:div.event-c
+      [:div.pic-right
+       [:img {:src "assets/photo/reduced/e05.jpg"}]]
+
+      [:p.event-date.text-right
+       "2 Dicembre 2016"]
+
+      [:p.event-text
+       "Paul (Paolo) Demontis nasce in Italia nel 1974 e inizia a suonare l’armonica all’età di 17 anni come autodidatta. Ora è un armonicista professionista, un innovatore delle possibilità espressive dello strumento, un coinvolgente live performer e un ricercato insegnante di armonica." [:br]
+       "Nel 1999 viene invitato dal prestigioso Centro Jazz di Torino (attualmente Jazz School Torino) a tenere un corso di armonica blues a varie classi di allievi, collaborazione che proseguirà per i successivi due anni, per poi delinearsi in una indipendente attività di insegnamento. Nel 2013 crea www.easyharp.it, primo sito italiano di video lezioni sull’armonica blues, innovando il sistema didattico sull’armonica e colmando un vuoto che lui stesso trovò all’inizio della propria esperienza di apprendista armonicista." [:br]
+       "Da sempre appassionato di blues, jazz, folk, rock e non solo, ha acquisito da solo il linguaggio tradizionale dell’armonica attraverso lo studio dei grandi maestri americani dello strumento, diventando presto un riconosciuto armonicista in stile Chicago Blues. Con la sua band, in 10 anni di roventi live, ha affiancato il palco di numerose star oltreoceano, tra cui Mark Hummel, Bob Margolin, Brian Templeton e tanti altri. Come armonicista si presta inoltre a diverse collaborazioni di produzione musicale, tra cui i numerosi spettacoli di teatro-musica realizzati con l’Accademia dei Folli, portando in scena monografie su Bob Dylan, Bruce Springsteen, Leonard Cohen e vari altri maestri del folk americano."]]]
 
 
     ;;
@@ -98,7 +127,7 @@
 
 
     [:div.month-c
-     [:p.event-title.overlay.text-left
+     [:p#31-10-2016.event-title.overlay.text-left
       "Dodo Harmonica Kid"]
 
      [:div.event-c
@@ -111,7 +140,7 @@
      [:p.event-title.overlay.text-left
       "Castagnata"]
 
-     [:div.event-c
+     [:div#30-10-2016.event-c
       [:p.event-date.text-left
        "30 Ottobre 2016"]
 
@@ -119,7 +148,7 @@
        "Castagnata gratuita nel dehors con conumazione a piacere" [:br]
        "Ore: 18.00"]]
 
-     [:p.event-title.overlay.text-left
+     [:p#28-10-2016.event-title.overlay.text-left
       "Senzatempo"]
 
      [:div.event-c
@@ -132,7 +161,7 @@
 
 
 
-    [:p.event-title.overlay.text-right
+    [:p#8-9-2016.event-title.overlay.text-right
      "Fast Frank & The Hot Shout Blues"]
 
     [:div.event-c
@@ -148,7 +177,7 @@
       "Nel 2011 esce il suo cd d’esordio, \"Shakin' The Boogie\", seguito nel 2016 da \"A Place In The Evening\", registrato dal vivo nell’astigiano. Nel 2011 il video tratto da un suo brano, \"Daddy Wants You To Come Back Home\", con la regia di Piero Ali Passatore, è stato premiato al Videoclip Festival di Roma."]]
 
 
-    [:p.event-title.overlay.text-left
+    [:p#1-8-2016.event-title.overlay.text-left
      "Eight o’Clock Blues"]
 
     [:div.event-c
@@ -164,7 +193,7 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
       "Ed è a seguito di questo collaudato sodalizio che i due bluesmen si propongono in talune situazion “ridotta”, con un repertorio che fonde i grandi classici del Chicago Blues, alcuni brani soul, folk blues e ballads, il tutto suonato in maniera “intima”, per poter far cogliere al pubblico tutto il significato dei pezzi proposti, senza però perdere in decisione e groove." [:br] [:br]
       "Il concerto è aperto a tutti e gratuito e la consumazione facoltativa. Vi aspettiamo!"]]
 
-    [:p.event-title.overlay.text-right
+    [:p#29-7-2016.event-title.overlay.text-right
      "Big Harp & Juke Joint Blues"]
 
     [:div.event-c
@@ -180,7 +209,7 @@ Il duo Fabio Giua e Angelo Elwood Vergnano è legato da un’amicizia ultra-vent
       "Il Juke Joint Blues è un esplosivo quartetto di musicisti appassionati e innamorati di quella musica che si suonava sulle rive del Mississipi e tra le strade della Louisiana negli anni 1950 e 1960. Il sound elettrico della band rende tuttavia questo genere slegato da ogni periodo storico, rendendolo sempre attuale;" [:br]
       "il repertorio comprende ritmi incalzanti, canzoni lente e ipnotiche, adatte al ballo tipico del Blues. Andy Cedrone alla batteria, Stefano Bad Finger al basso, Max Pizza alla chitarra, armonica e voce e Natale Chillè alla chitarra solista. Durante lo show potrebbero esserci ospiti che suoneranno una Blues Jam come prevede la cultura Blues."]]
     
-    [:p.event-title.text-left.overlay
+    [:p#15-07-2016.event-title.text-left.overlay
      "Dodo Harmonica Kid"]
 
     [:div.event-c

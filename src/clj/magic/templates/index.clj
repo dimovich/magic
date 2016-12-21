@@ -52,10 +52,10 @@
         (svg-to-hiccup "html/assets/svg/plate.svg")
         [:img.icon.mobile.center-plate {:src "assets/img/plate.png"}]]
        [:div.m-title
-        "MENÚ RISTO-PUB"]
+        "MENÙ RISTO-PUB"]
        [:div.m-text-container.desktop
         [:span.m-text
-         "Scopri le nostre proposte, prova i nostri piatti preparati con ingredienti freschi del territorio"]]]
+         "Scopri le nostre proposte, prova i nostri piatti preparati con ingredienti freschi del territorio."]]]
 
       [:div.ttr.clickable {:onclick "window.location='menu.html#beer';"}
        [:div.m-icon.icon-beer
@@ -65,7 +65,7 @@
         "BIRRE"]
        [:div.m-text-container.desktop
         [:span.m-text
-         "Vieni a degustare la nostra selezione di etichette italiane ed internazionali"]]]
+         "Vieni a degustare la nostra selezione di etichette artigianali italiane ed internazionali."]]]
 
       [:div.ttr.clickable {:onclick "window.location='menu.html#drinks';"}
        [:div.m-icon.icon-drinks
@@ -75,7 +75,7 @@
         "DRINK DIFFERENT"]
        [:div.m-text-container.desktop
         [:span.m-text
-         "Scopri la nostra riserva di distillati da tutto il mondo, le nostre bibite e gli infusi biologici"]]]]]
+         "Scopri la nostra riserva di distillati da tutto il mondo, i nostri infusi e le bibite biologiche."]]]]]
 
 
     ;;
@@ -101,10 +101,10 @@
      [:p.section-title.overlay
       "EVENTI"]
      [:div.section-text.text-center
-      [:p.e-text
-       "Concerti, letture di poesia, screaning di film, feste personali."
-       [:br]
-       "Se vuoi proporci degli eventi, contattaci e saremo lieti di ospitare l’evento."]]
+      [:p.e-text.centered
+       "Concerti dal vivo, letture, serate a tema, degustazioni con i produttori e gli specialisti del settore food & beverage."
+       [:br] [:br]
+       "Proponici un evento pubblico, oppure prenota per la tua festa privata!"]]
      [:p.calendar-title.text-center
       "Archivio & Calendario"]
      [:div.calendar-container
