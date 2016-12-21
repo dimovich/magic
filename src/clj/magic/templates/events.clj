@@ -32,6 +32,37 @@
     [:p.events-main-title.overlay
      "ARCHIVIO EVENTI"]
 
+    ;;
+    ;; DICEMBRE
+    ;;
+    [:div.month-c
+     
+     [:p#31-12-2016.event-title.overlay.text-left
+      "Cenone di Capodanno"]
+     [:div.event-c
+      [:p.event-date.text-left
+       "31 Dicembre 2016"]
+      [:p.event-text
+       "Vi presentiamo il nostro menù di Capodanno! Per prenotazioni chiamare il numero 333 621 08 14"]]
+
+     
+     [:p#23-12-2016.event-title.overlay.text-left
+      "Marine Band (Blues)"]
+     [:div.event-c
+      [:div.pic-left
+       [:img {:src "assets/photo/reduced/e04.jpg"}]]
+
+      [:p.event-date.text-left
+       "23 Dicembre 2016"]
+
+      [:p.event-text
+       "La Marine Band è uno dei pochi gruppi italiani specializzati nel suonare blues acustico. Il loro repertorio ripercorre la storia del blues, dagli anni '20 fino al Rock-Blues dei nostri giorni; gli autori vanno da Robert Johnson, Muddy Waters, a Jimi Hendrix, Chuck Berry, Eric Clapton. In questi anni di attività la Marine Band può vantare numerosi concerti, eseguiti in giro per l'Italia in molti prestigiosi locali e in varie feste di piazza." [:br]
+       "Ore: 22.00"]]]
+
+
+    ;;
+    ;; NOVEMBRE
+    ;;
     [:div.month-c
      [:p#27-11-2016.event-title.overlay.text-left
       "Torneo Backgammon"]
