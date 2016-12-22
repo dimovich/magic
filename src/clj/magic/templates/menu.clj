@@ -10,7 +10,7 @@
 ;; FOOD
 (defn menu-item-f [title price]
   [:div.menu-item-c
-   [:p.menu-item-left.menu-item-text
+   [:p.menu-item-left.text-left.menu-item-text
     title]
    [:p.menu-item-right.menu-item-text
     price]
@@ -101,35 +101,36 @@
 
       [:p.menu-section-title
        "PASTE"]
-      [:div.menu-items-c
-       (menu-item-f "Bucatini all’Amatriciana Rivisitata (Bacon & Caprino Sardo)" "7,00")
-       (menu-item-f "Fusilli Integrali all’Ortolana" "7,50")
-       (menu-item-f "Tagliatelle al Ragù di Cacciagione (secondo disponibilità)" "8,00")
-       (menu-item-f "Gnocchi alla Fonduta di Toma Caseificio Ettore Lisa" "8,00")
-       (menu-item-f "Agnolotti di Verdure al Burro & Timo" "8,50")]
+      (menu-item-f "Spaghetti alla Carbonara" "7,00")
+      (menu-item-f "Spätzle alla Tirolese" "7,00")
+      (menu-item-f "Tagliatelle al Ragù di Salsiccia" "7,00")
+      (menu-item-f "Gnocchi alla Fonduta di Toma" "8,00")
+      (menu-item-f "Agnolotti al Burro e Salvia" "8,00")
       
       [:p.menu-section-title
        "SPECIALITÀ"]
 
-      [:div.menu-items-c
-       (menu-item-f "Alette di Pollo alla Diavola (peperoncino T. Moruga Scorpion)" "6,50")
-       (menu-item-f "Stinco (300 gr.) a tutta Birra" "7,00")
-       (menu-item-f "Costine a lenta cottura al Forno in stile BBQ" "7,50")
-       (menu-item-f "Suprême di Tacchino al Tè Affumicato (Lapsang Souchong)" "8,00")
-       (menu-item-f "Svizzerina doppia (260 gr.) 100% Vitella Coalvi con fonduta di Toma Caseificio Ettore Lisa" "9,00")
-       (menu-item-f "Salsiccia scottata di Vitella Coalvi & Pancetta (250gr.)" "10,00")
-       (menu-item-f "Filetto di Suino allevato in Piemonte al Rosmarino" "10,00")
-       (menu-item-f "«Orecchia di Elefante» di Vitella Coalvi" "11,00")
-       (menu-item-f "Tagliata di Vitella Coalvi (250 gr.)" "15,00")]
+      (menu-item-f "Alette di Pollo alla Diavola con Patatine" "8,00")
+      (menu-item-f "Stinco a tutta Birra con Carote Arrostite" "8,50")
+      (menu-item-f "Peposo Toscano con Patata al Cartoccio" "9,00")
+      (menu-item-f "Costine al Forno in stile BBQ con Carote Arrostite" "10,00")
+      (menu-item-f "Suprême di Tacchino al Tè Affumicato con Ratatouille" "10,00")
+      (menu-item-f "Doppia Svizzerina Coalvi alla Crema di Toma con Patatine" "11,00")
+      (menu-item-f "«Orecchia di Elefante» Coalvi con Patatine" "12,00")
+      (menu-item-f "Tagliata Coalvi (al Sangue) - al Naturale" "14,00")
+      (menu-item-f "Tagliata Coalvi (al Sangue) - al Bacon con Cipolle Caramellate" "15,00")
+      (menu-item-f "Tagliata Coalvi (al Sangue) - al Blu di Lanzo con Patata al Cartoccio" "15,00")
 
       [:p.menu-section-title
-       "CONTORNI"]
+       "SFIZI & CONTORNI"]
 
-      [:div.menu-items-c
-       (menu-item-f "Patatine Fritte fatte in casa" "3,00")
-       (menu-item-f "Cipolle di Tropea caramellate" "3,00")
-       (menu-item-f "Insalata mista" "3,50")
-       (menu-item-f "Julienne di Verdure saltate" "4,00")]
+      (menu-item-f "Patatine Fresche" "3,00")
+      (menu-item-f "Carote Intere Arrostite" "3,50")
+      (menu-item-f "Cipolle Caramellate" "3,50")
+      (menu-item-f "Insalata mista" "3,50")
+      (menu-item-f "Ratatouille" "4,00")
+      (menu-item-f "Bomba al Gorgonzola" "4,00")       
+      (menu-item-f "Scamorzine affumicate impanate" "4,00")
 
       [:p.menu-title
        "MENÙ PUB"]
@@ -137,17 +138,17 @@
       [:p.menu-section-title
        "TAGLIERI"]
 
-      (menu-item-f "Disfida delle Tome" "8,50")
-      (menu-item-f "Selezione del Maslè (scelta di affettati elaborata dalla Macelleria Benente Marco di Chieri)" "8,50")
+      (menu-item-f "Disfida delle Tome" "9,00")
+      (menu-item-f "Selezione del Maslè" "9,00")
       (menu-item-f "Gran Misto di Salumi e Formaggi" "13,00")
 
       [:p.menu-section-title
        "PATATE FARCITE" [:br] "(Jacked Potatoes)"]
 
-      (menu-item-f "Lardosa" "3,50")
+      (menu-item-f "Lardosa" "4,00")
       (menu-item-f "Fonduta" "4,00")
       (menu-item-f "Gorgo-Cipolluta" "4,50")
-      (menu-item-f "Pancett Atomica (crema di Toma d’Alpeggio e pancetta affumicata)" "4,50")
+      (menu-item-f "Pancett Atomica (Bacon & Crema di Toma d’Alpeggio)" "4,50")
 
       [:p.menu-section-title
        "FRITTURE"]
@@ -157,7 +158,7 @@
       (menu-item-f "Anelli di Cipolle Rosse fresche" "4,00")
 
       [:p.menu-section-title
-       "PAN-FRITTO" [:br] "Lievitato in Casa (soltanto alla sera)"]
+       "PAN-FRITTO" [:br] "Lievitato in Casa:"]
 
       (menu-item-f "con Olive Piccanti" "4,00")
       (menu-item-f "con Mortadella" "4,00")
@@ -165,33 +166,37 @@
       (menu-item-f "con Pancetta Affumicata" "5,00")
       (menu-item-f "con Stracchino Caseificio E. Lisa" "6,00")
       (menu-item-f "con Prosciutto Crudo" "6,00")
-
+      (menu-item-f "con Prosciutto Crudo & Stracchino" "8,00")
+      
       [:p.menu-section-title
        "HAMBURGER FATTI IN CASA" [:br] "(130 gr.) con Pane al Sesamo, Pomodori & Lattuga"]
 
-      (menu-item-f "Vegan Beauty - 100% Ortaggi, verdure, legumi e cereali" "5,00")
-      (menu-item-f "Indaco - 100% Tacchino con Verdure al Curry)" "5,50")
-      (menu-item-f "Micidiale - 100% Suino allevato in Piemonte portato ad un grado di piccantezza «AB-normal»" "5,50")
-      (menu-item-f "Amerinide - 100% Suino allevato in Piemonte con Cipolle caramellate e Pancetta affumicata" "6,00")
-      (menu-item-f "Continentale - 100% Carne Coalvi con crema di Toma d’Alpeggio" "6,50")
-      (menu-item-f "Esagerato - Doppio «Amerinide» con Fonduta" "8,50")
+      (menu-item-f [:div.menu-item-text "Vegan Beauty" " con Patatine Fresche - Ortaggi, verdure, legumi"] "7,00")
+      (menu-item-f [:div.menu-item-text "Indaco" " con Patatine Fresche - Puro Tacchino con Verdure al Curry"] "7,50")
+      (menu-item-f [:div.menu-item-text "Micidiale" " con Patatine Fresche - Puro Suino allevato in Piemonte portato ad un grado di piccantezza «AB-normal»"] "7,50")
+      (menu-item-f [:div.menu-item-text "Amerinide" " con Patatine Fresche - Puro Suino allevato in Piemonte con Cipolle caramellate e Pancetta affumicata"] "8,00")
+      (menu-item-f [:div.menu-item-text "Pedemontano" " con Patatine Fresche - Pura Vitella Coalvi con Crema di Blu di Lanzo e Trevigiana"] "8,50")
+      (menu-item-f [:div.menu-item-text "Continentale" " con Patatine Fresche - Pura Vitella Coalvi con Fonduta di Toma d’Alpeggio"] "8,50")
+      (menu-item-f [:div.menu-item-text "Krapf-Burger con Patatine Fresche - Vitella Coalvi con Fonduta di Toma d’Alpeggio in un bombolone fritto al momento"] "9,00")  
+      (menu-item-f [:div.menu-item-text "Esagerato con Patatine Fresche - Doppio «Amerinide» con Fonduta"] "10,00")
+      (menu-item-f [:div.menu-item-text "Baby-burger di pura Vitella Coalvi al naturale servito nel piatto con patatine fresche, senza il pane e senza pomodori e lattuga"] "6,00")
 
       [:p.menu-section-title
        "PANINI"]
 
-      (menu-item-f "Hortense - con Verdure saltate" "4,00")
-      (menu-item-f "Porcaccione - con Salsicciotto alla piastra & Lattuga" "4,50")
-      (menu-item-f "Crucco - con Würstel & Crauti" "5,00")
-      (menu-item-f "Club - Sandwich con Patatine" "10,00")
+      (menu-item-f "Speck & Toma" "4,50")
+      (menu-item-f "Balengo (con Würstel, Uovo strapazzato e Caprino sardo stagionato)" "5,00")
+      (menu-item-f "Porcaccione (alla Frank) (con Salsicciotto alla piastra, Cipolle Caramellate & Crema di Toma d’Alpeggio)" "5,50")
+      (menu-item-f "Club Sandwich con Patatine" "11,00")
 
       [:p.menu-section-title
        "DOLCI"]
 
-      (menu-item-f "Parfait alla Birra" "4,00")
-      (menu-item-f "Torta di Nocciole croccante" "4,00")
-      (menu-item-f "Créme Brûlée" "4,50")
-      (menu-item-f "Semifreddo alla Crema di Sesamo con Datteri" "4,50")
-      (menu-item-f "Torcetti con Passito di Caluso DOC" "5,00")
+      (menu-item-f "Tiramisù" "4,50")
+      (menu-item-f "Torta al Fondente all’Arancia" "4,50")
+      (menu-item-f "Crème Brûlée alla Vaniglia del Madagascar" "4,50")
+      (menu-item-f "Cheesecake alla Robiola" "4,50")
+      (menu-item-f "Torcetti di Agliè con Passito di Caluso DOC" "5,00")
 
       [:div.menu-desc-bottom
        [:p.menu-desc-text
