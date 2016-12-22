@@ -224,31 +224,62 @@
        "Birrificio: Schönram (Monaco di Baviera)" [:br]
        "Stile: Helles"]
       
-      (menu-item-b "ALC. 5 %" ["3,00" "5,00" "10,00"] )
+      (menu-item-b "ALC. 5%" ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "PUNK IPA"]
 
       [:p.menu-item-text
-       "Uno dei prodotti più famosi di Brewdog. Nel bicchiere la Punk IPA si presenta di un bel colore oro carico con un cappello di schiuma compatto. Al naso alle note fresche del luppolo si uniscono sensazioni più leggere di frutta a pasta gialla e balsamiche di erba aromatica." [:br]
-       "In bocca, caratterizzata da un corpo ampio, la dolcezza iniziale è ben equilibrata dalle note amare e agrumate che dominano il finale invitando ripetutamente al sorso successivo." [:br]
+       "Uno dei prodotti più famosi di Brewdog. Nel bicchiere la Punk IPA si presenta di un bel colore oro carico con un cappello di schiuma compatto. Al naso alle note fresche del luppolo si uniscono sensazioni più leggere di frutta a pasta gialla e balsamiche di erba aromatica. In bocca, caratterizzata da un corpo ampio, la dolcezza iniziale è ben equilibrata dalle note amare e agrumate che dominano il finale invitando ripetutamente al sorso successivo." [:br]
        "Birrificio: Brewdog (Scozia)" [:br]
        "Stile: Ipa (Indian pale ale)"]
 
-      (menu-item-b "ALC. 5,4 %" ["3,50" "5,50" "11,00"])
+      (menu-item-b "ALC. 5,4%" ["3,50" "5,50" "11,00"])
 
 
       [:p.menu-section-title
        "OBLIVION"]
 
       [:p.menu-item-text
-       "Vi presentiamo una classica rivisitazione della tradizione birraia belga; il corpo è intenso, avvolge il palato e scalda il cuore. L'elevato tenore alcolico non nasconde la complessità dei suoi aromi ed in bocca risaltano tutte le note di frutta matura e spezie." [:br]
-       "È una birra da meditazione, adatta per lunghe serate da passare con gli amici." [:br]
+       "Vi presentiamo una classica rivisitazione della tradizione birraia belga; il corpo è intenso, avvolge il palato e scalda il cuore. L'elevato tenore alcolico non nasconde la complessità dei suoi aromi ed in bocca risaltano tutte le note di frutta matura e spezie. È una birra da meditazione, adatta per lunghe serate da passare con gli amici." [:br]
        "Birrificio: Beer selection (progetto irriverence)" [:br]
        "Stile: Trippel belgian ale"]
 
-      (menu-item-b "ALC. 8,5 %" ["3,00" "5,00" "10,00"] )
+      (menu-item-b "ALC. 8,5%" ["3,00" "5,00" "10,00"] )
 
+      [:p.menu-section-title
+       "FALESIA"]
+
+      [:p.menu-item-text
+       "In stile Boch. Colore Rosso intenso, grado alcolico 7,0. Birra a bassa fermentazione. Al naso è dolce con note di caramello e un forte aroma di malto. Sentori di noci e frutta rossa matura." [:br]
+       "Birrificio: Lariano" [:br]
+       "Stile: Bock"]
+
+      (menu-item-b "ALC. 7%" ["3,00" "5,00" "10,00"])
+
+
+      [:p.menu-section-title
+       "MADIBA PORTER"]
+
+      [:p.menu-item-text
+       "Porter è uno stile birraio  ottenuto con malti di colore scuro il cui nome  in inglese significa facchino: la birra proposta per la prima volta nel 1722 da un pub di Londra in poco tempo divenne popolare tra quella categoria di lavoratori. Birra ad alta fermentazione con sentori di cioccolato e caffè dati dalle tostature dei malti. Corpo medio e di facile beva, nonostante il colore scuro." [:br]
+       "Birrificio: Lariano" [:br]
+       "Stile: Porter"]
+
+      (menu-item-b "ALC. 4,6%" ["3,00" "5,00" "10,00"])
+
+      
+      [:p.menu-section-title
+       "SMOKY"]
+
+      [:p.menu-item-text
+       "Moderna interpretazione delle tradizionali rauch beer tedesche tipiche della zona di Bamberga. Questo stile nacque con la scoperta che essiccare i malti su fiamma viva conferiva loro un carattere affumicato, che talvolta si trasferiva anche al sapore della birra ottenuta da questi malti. Interpretazione tutta italiana, un poco più secca, un pò più amara, molto, molto più bevibile delle versioni tedesche che l'hanno ispirata. Si presenta di un bel colore ambrato con qualche riflesso color rame. schiuma color crema, persistente ma non eccessiva. Una buona birra facile da bere, ben maltata, corpo medio e carbonazione bassa." [:br]
+       "Birrificio: Rurale" [:br]
+       "Stile: Rauchbeer"]
+
+      (menu-item-b "ALC. 5,6%" ["3,00" "5,00" "10,00"])
+
+      
       [:p.menu-section-title
        "MILOUD"]
 
@@ -257,7 +288,7 @@
        "Birrificio: Lariano (Lecco)" [:br]
        "Stile: Bitter Ale"]
 
-      (menu-item-b "ALC. 4 %" ["3,00" "5,00" "10,00"])
+      (menu-item-b "ALC. 4%" ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "MAGNUS (33 cl)"]
@@ -267,7 +298,7 @@
        "Birrificio: Croce di Malto (Novara)" [:br]
        "Stile: Double Belgian Ale"]
 
-      (menu-item-b "ALC. 7,3 %"  ["3,00" "5,00" "10,00"])
+      (menu-item-b "ALC. 7,3%"  ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "ANTANI"]
@@ -277,7 +308,7 @@
        "Birrificio: Fidenza" [:br]
        "Stile: Belgian ale"]
 
-      (menu-item-b "ALC. 6,0 %" ["3,00" "5,00" "10,00"])
+      (menu-item-b "ALC. 6,0%" ["3,00" "5,00" "10,00"])
 
       [:p.menu-section-title
        "RESET"]
@@ -320,7 +351,7 @@
        "Birrificio: Toccalmatto (Parma)" [:br]
        "Stile: Belgian pale ale"]
 
-      (menu-item-b2 "ALC 6,2 %" "75,cl - 8,00")]
+      (menu-item-b2 "ALC 6,2%" "75,cl - 8,00")]
 
      [:br] 
 
@@ -360,9 +391,9 @@
 
       (menu-item-f "Coca-Cola (20cl)" "3,00")
       (menu-item-f "Coca-cola zero (33cl)" "3,00")
-      (menu-item-f "Bibite Galvanina BIO  (35,5cl)" "3,50")
-      
-      (menu-item-f [:div.menu-item-text "Cola - aranciata bionda - aranciata rossa - gazzosa - tonica - ginger - chinotto - thè freddo limone❘pesca - Succhi di frutta BIO"]  "3,50")
+      (menu-item-f [:div.menu-item-text "Bibite Galvanina BIO  (35,5cl) cola - aranciata bionda - aranciata rossa - gazzosa - tonica - ginger - chinotto - thè freddo limone❘pesca"] "3,50")
+        
+      (menu-item-f "Succhi di frutta BIO" "3,50")
 
       [:p.menu-title.overlay
        "ALCOLICI"]
@@ -377,9 +408,7 @@
       (menu-item-f "Moonshine Platte Valley – Katskill – Applejack" "4,50")
       (menu-item-f "Acnoc 12 yrs, Balblair, Ardbeg" "5,50")
 
-      [:p.menu-section-title "GRAPPE"]
-
-      [:p.menu-item-text "Antica Distilleria Quaglia"]
+      [:p.menu-section-title "GRAPPE (Antica Distilleria Quaglia)"]
 
       (menu-item-f "Bianca / gialla / fumé monovitigno" "3,00")
 
