@@ -6,7 +6,7 @@
     font-weight: bold;
     letter-spacing : 1.18px;
     margin-bottom: 60px;
-    margin-top: 30px;
+    margin-top: 0.5em;
 }
 
 .event-c {
@@ -19,7 +19,7 @@
     border-bottom:0;
     border-image: url("../img/border01.png") 3 round;
     border-image-repeat: repeat;
-    margin-bottom: 50px;
+    margin-bottom: 2em;
 }
 
 .event-c img {
@@ -45,7 +45,7 @@
   color : #231F20;
   color : rgb(35, 31, 32);
   margin: 0;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 
@@ -70,12 +70,12 @@
 
 .pic-left, .pic-right {
     margin: 1em;
-    margin-top: 5em;
+    margin-top: 4.5em;
 }
 
 .pic-center {
-    margin-top: 2em;
-    width: 80%;
+    margin-top: 1.5em;
+    max-width: 60%;
 }
 
 .pic-left {
@@ -98,9 +98,10 @@
 	clear: both;
 	margin: auto;
 	width: 100%;
+	max-width: 100%;
 	text-align: center;
 	margin-bottom: 1em;
-	margin-top: 2em;
+	margin-top: 1.5em;
     }
     .events-main-title {
 	text-align: left;

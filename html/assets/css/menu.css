@@ -144,6 +144,10 @@
     float: left;
     margin: 0;
     margin-right: 8px;
+    max-width: 90%;
+/*    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;*/
 }
 
 .menu-item-middle { 
@@ -191,6 +195,11 @@ a:hover img {
     .menu-item-middle {
 	width: 100%
     }
+
+    .menu-item-left {
+	max-width: 70%;
+    }
+    
     .content {
 	padding: 0px 10px;
 	margin-top: 50px;

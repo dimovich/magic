@@ -27,8 +27,12 @@
               "CHI SIAMO" "index.html#chi-siamo"
               "GALLERIA" "index.html#gallery"
               "CONTATTI" "index.html#contacts")]
+
+
+   [:div.mobile.menu-nav]
    
    [:div.content
+    [:div.spacer]
     [:p.events-main-title.overlay
      "ARCHIVIO EVENTI"]
 
@@ -84,9 +88,13 @@
        "2 Dicembre 2016"]
 
       [:p.event-text
-       "Paul (Paolo) Demontis nasce in Italia nel 1974 e inizia a suonare l’armonica all’età di 17 anni come autodidatta. Ora è un armonicista professionista, un innovatore delle possibilità espressive dello strumento, un coinvolgente live performer e un ricercato insegnante di armonica." [:br]
-       "Nel 1999 viene invitato dal prestigioso Centro Jazz di Torino (attualmente Jazz School Torino) a tenere un corso di armonica blues a varie classi di allievi, collaborazione che proseguirà per i successivi due anni, per poi delinearsi in una indipendente attività di insegnamento. Nel 2013 crea www.easyharp.it, primo sito italiano di video lezioni sull’armonica blues, innovando il sistema didattico sull’armonica e colmando un vuoto che lui stesso trovò all’inizio della propria esperienza di apprendista armonicista." [:br]
-       "Da sempre appassionato di blues, jazz, folk, rock e non solo, ha acquisito da solo il linguaggio tradizionale dell’armonica attraverso lo studio dei grandi maestri americani dello strumento, diventando presto un riconosciuto armonicista in stile Chicago Blues. Con la sua band, in 10 anni di roventi live, ha affiancato il palco di numerose star oltreoceano, tra cui Mark Hummel, Bob Margolin, Brian Templeton e tanti altri. Come armonicista si presta inoltre a diverse collaborazioni di produzione musicale, tra cui i numerosi spettacoli di teatro-musica realizzati con l’Accademia dei Folli, portando in scena monografie su Bob Dylan, Bruce Springsteen, Leonard Cohen e vari altri maestri del folk americano."]]]
+       "Dalle ore 22,00 si esibirà un grande innovatore del blues, Paul Demontis con il suo one harmonica band live show.
+Paul (Paolo) Demontis nasce in Italia nel 1974 e inizia a suonare l’armonica all’età di 17 anni come autodidatta. Ora è un armonicista professionista e un ricercato insegnante di armonica." [:br]
+       "Da sempre appassionato di blues, jazz, folk, rock e non solo, con la sua band, in 10 anni di roventi live, ha affiancato il palco di numerose star oltreoceano, tra cui Mark Hummel, Bob Margolin, Brian Templeton e tanti altri. Come armonicista si presta inoltre a diverse collaborazioni di produzione musicale, tra cui i numerosi spettacoli di teatro-musica realizzati con l’Accademia dei Folli, portando in scena monografie su Bob Dylan, Bruce Springsteen, Leonard Cohen e vari altri maestri del folk americano." [:br]
+       "Nel 2014 diventa artista endorser delle armoniche Seydel, assieme a nomi di spicco del panorama blues internazionale, quali Charlie Musselwhite e James Cotton, per citarne alcuni." [:br]
+       "Nel 2015 pubblica “Loopin’ The Blues”, il suo primo disco solista, in chiave New Modern One Man Band: 9 brani originali che esprimono in pieno la sua volontà di creatività musicale, spaziando dal traditional, al funk, al rap, al reggae, all’afro beat, componendo e registrando tutto da solo." [:br]
+       "In un solo anno dall’uscita del suo disco ha già partecipato a numerosi prestigiosi blues festival, tra cui Gilgamesh Blues Festival, Chicago Blues Festival, Cagliari Blues Festival, Malcesine Blues Festival, Beinasco Blues Festival, Raduno Nazione Blues Made In Italy, Birra Ceca Blues Festival." [:br]
+       "Da tutto questo nasce “Loopin’ The Blues 2.0”, il nuovo live show di Paul Demontis, frutto di tanta esperienza e della sua maturata natura musicale: unisce i suoni di oggi, usando la beatbox, suonando il basso con la voce e un octaver, suonando diversi tipi di armoniche, usando una loopstation multi traccia per creare i suoi “Blues&Groove”."]]]
 
 
     ;;
