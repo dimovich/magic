@@ -14,7 +14,8 @@
     title]
    [:p.menu-item-right.menu-item-text
     price]
-   [:p.menu-item-middle]])
+   [:p.menu-item-middle]
+   [:div {:style "display: hidden; clear: both;"}]])
 
 
 ;; BEER
@@ -95,7 +96,7 @@
     [:div.menu-c.centered
      [:div#food.spacer]
      [:div.menu-section
-      [:p.menu-title
+      [:p.menu-title3
        [:br]
        "MENÙ RISTORANTE"]
 
@@ -171,15 +172,15 @@
       [:p.menu-section-title
        "HAMBURGER FATTI IN CASA" [:br] "(130 gr.) con Pane al Sesamo, Pomodori & Lattuga"]
 
-      (menu-item-f [:div.menu-item-text "Vegan Beauty" " con Patatine Fresche - Ortaggi, verdure, legumi"] "7,00")
-      (menu-item-f [:div.menu-item-text "Indaco" " con Patatine Fresche - Puro Tacchino con Verdure al Curry"] "7,50")
-      (menu-item-f [:div.menu-item-text "Micidiale" " con Patatine Fresche - Puro Suino allevato in Piemonte portato ad un grado di piccantezza «AB-normal»"] "7,50")
-      (menu-item-f [:div.menu-item-text "Amerinide" " con Patatine Fresche - Puro Suino allevato in Piemonte con Cipolle caramellate e Pancetta affumicata"] "8,00")
-      (menu-item-f [:div.menu-item-text "Pedemontano" " con Patatine Fresche - Pura Vitella Coalvi con Crema di Blu di Lanzo e Trevigiana"] "8,50")
-      (menu-item-f [:div.menu-item-text "Continentale" " con Patatine Fresche - Pura Vitella Coalvi con Fonduta di Toma d’Alpeggio"] "8,50")
-      (menu-item-f [:div.menu-item-text "Krapf-Burger con Patatine Fresche - Vitella Coalvi con Fonduta di Toma d’Alpeggio in un bombolone fritto al momento"] "9,00")  
-      (menu-item-f [:div.menu-item-text "Esagerato con Patatine Fresche - Doppio «Amerinide» con Fonduta"] "10,00")
-      (menu-item-f [:div.menu-item-text "Baby-burger di pura Vitella Coalvi al naturale servito nel piatto con patatine fresche, senza il pane e senza pomodori e lattuga"] "6,00")
+      (menu-item-f '("Vegan Beauty con Patatine Fresche" [:br] " - Ortaggi, verdure, legumi") "7,00")
+      (menu-item-f '("Indaco con Patatine Fresche" [:br] " - Puro Tacchino con Verdure al Curry") "7,50")
+      (menu-item-f '("Micidiale con Patatine Fresche" [:br] " - Puro Suino allevato in Piemonte portato ad un grado di piccantezza «AB-normal»") "7,50")
+      (menu-item-f '("Amerinide con Patatine Fresche" [:br] " - Puro Suino allevato in Piemonte con Cipolle caramellate e Pancetta affumicata") "8,00")
+      (menu-item-f '("Pedemontano con Patatine Fresche" [:br] " - Pura Vitella Coalvi con Crema di Blu di Lanzo e Trevigiana") "8,50")
+      (menu-item-f '("Continentale  con Patatine Fresche" [:br] " - Pura Vitella Coalvi con Fonduta di Toma d’Alpeggio") "8,50")
+      (menu-item-f '("Krapf-Burger con Patatine Fresche" [:br] " - Vitella Coalvi con Fonduta di Toma d’Alpeggio in un bombolone fritto al momento") "9,00")  
+      (menu-item-f '("Esagerato con Patatine Fresche" [:br] " - Doppio «Amerinide» con Fonduta") "10,00")
+      (menu-item-f "Baby-burger di pura Vitella Coalvi al naturale servito nel piatto con patatine fresche, senza il pane e senza pomodori e lattuga" "6,00")
 
       [:p.menu-section-title
        "PANINI"]
@@ -219,7 +220,7 @@
       [:p.menu-section-title
        "HELL"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Un bel giallo paglierino limpido completata da un discreto perlage di schiuma candida e compatta. Naso elegante caratterizzato da piene note di miele accompagnate da sentori erbacei dei luppoli nobili della zona. Al gusto si presenta il malto in evidenza seguito dal luppolo erbaceo con chiusura sull’amaro moderato sostenuto da una briosa frizzantezza. Birra di facile bevuta, equilibrata e dissetante." [:br]
        "Birrificio: Schönram (Monaco di Baviera)" [:br]
        "Stile: Helles"]
@@ -229,7 +230,7 @@
       [:p.menu-section-title
        "PUNK IPA"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Uno dei prodotti più famosi di Brewdog. Nel bicchiere la Punk IPA si presenta di un bel colore oro carico con un cappello di schiuma compatto. Al naso alle note fresche del luppolo si uniscono sensazioni più leggere di frutta a pasta gialla e balsamiche di erba aromatica. In bocca, caratterizzata da un corpo ampio, la dolcezza iniziale è ben equilibrata dalle note amare e agrumate che dominano il finale invitando ripetutamente al sorso successivo." [:br]
        "Birrificio: Brewdog (Scozia)" [:br]
        "Stile: Ipa (Indian pale ale)"]
@@ -240,7 +241,7 @@
       [:p.menu-section-title
        "OBLIVION"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Vi presentiamo una classica rivisitazione della tradizione birraia belga; il corpo è intenso, avvolge il palato e scalda il cuore. L'elevato tenore alcolico non nasconde la complessità dei suoi aromi ed in bocca risaltano tutte le note di frutta matura e spezie. È una birra da meditazione, adatta per lunghe serate da passare con gli amici." [:br]
        "Birrificio: Beer selection (progetto irriverence)" [:br]
        "Stile: Trippel belgian ale"]
@@ -250,7 +251,7 @@
       [:p.menu-section-title
        "FALESIA"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "In stile Boch. Colore Rosso intenso, grado alcolico 7,0. Birra a bassa fermentazione. Al naso è dolce con note di caramello e un forte aroma di malto. Sentori di noci e frutta rossa matura." [:br]
        "Birrificio: Lariano" [:br]
        "Stile: Bock"]
@@ -261,7 +262,7 @@
       [:p.menu-section-title
        "MADIBA PORTER"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Porter è uno stile birraio  ottenuto con malti di colore scuro il cui nome  in inglese significa facchino: la birra proposta per la prima volta nel 1722 da un pub di Londra in poco tempo divenne popolare tra quella categoria di lavoratori. Birra ad alta fermentazione con sentori di cioccolato e caffè dati dalle tostature dei malti. Corpo medio e di facile beva, nonostante il colore scuro." [:br]
        "Birrificio: Lariano" [:br]
        "Stile: Porter"]
@@ -272,7 +273,7 @@
       [:p.menu-section-title
        "SMOKY"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Moderna interpretazione delle tradizionali rauch beer tedesche tipiche della zona di Bamberga. Questo stile nacque con la scoperta che essiccare i malti su fiamma viva conferiva loro un carattere affumicato, che talvolta si trasferiva anche al sapore della birra ottenuta da questi malti. Interpretazione tutta italiana, un poco più secca, un pò più amara, molto, molto più bevibile delle versioni tedesche che l'hanno ispirata. Si presenta di un bel colore ambrato con qualche riflesso color rame. schiuma color crema, persistente ma non eccessiva. Una buona birra facile da bere, ben maltata, corpo medio e carbonazione bassa." [:br]
        "Birrificio: Rurale" [:br]
        "Stile: Rauchbeer"]
@@ -283,7 +284,7 @@
       [:p.menu-section-title
        "MILOUD"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Colore ramato, birra ad alta fermentazione. Aroma di luppolo moderatamente intenso, fruttata ed agrumata. Il sentore di malto, caramello ed il corpo leggero la rendono decisamente rinfrescante. È una birra che storicamente non si serve ghiacciata, per rispettare quelle che sono le sue caratteristiche organolettiche." [:br]
        "Birrificio: Lariano (Lecco)" [:br]
        "Stile: Bitter Ale"]
@@ -293,7 +294,7 @@
       [:p.menu-section-title
        "MAGNUS (33 cl)"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Complessa ed infinita nel gusto, solo come le vere birre di abbazia belghe. È caratterizzata dalla raffinatezza dei malti ad intensa tostatura che evocano note di caramello, caffè, liquirizia e perfino cioccolato. Piacevole ed appagante sorso dopo sorso, raffinata nei profumi di malto, di frutta rossa e frutta secca, le note della intrigante speziatura chiudono una piacevolissima bevuta." [:br]
        "Birrificio: Croce di Malto (Novara)" [:br]
        "Stile: Double Belgian Ale"]
@@ -303,7 +304,7 @@
       [:p.menu-section-title
        "ANTANI"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Il birrificio che la produce si chiama Toccalmatto e la birra si chiama Antani... Non potete che aspettarvi una cosa strana! Una Spicy Belgian Ale dallo splendido colore ambrato, una base maltata dai ricchi sentori di toffee e caramello bruno e le classiche note di frutti rossi donate dal lievito. Su questa base tradizionale, ogni anno il birrificio sperimenta mix creativi di spezie e ingredienti aromatici, e quest'anno è la volta di un blend di tè neri, scorze d'agrumi e frutta disidratata! Non aspettatevi nulla che abbiate mai assaggiato, senza schiuma e con una gasatura pressoché inesistente." [:br]
        "Birrificio: Fidenza" [:br]
        "Stile: Belgian ale"]
@@ -313,7 +314,7 @@
       [:p.menu-section-title
        "RESET"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Birra ispirata allo stile American Amber Ale. L'abbondante luppolatura con le migliori varietà aromatiche americane conferisce a questa birra un gusto e un profumo intensi, che trovano il loro bilanciamento nelle ricche note maltate, il colore è di un ambrato intenso che tende al rosso. E' interessante l'abbinamento con carni rosse e formaggi stagionati." [:br]
        "Birrificio: Rurale a Desio (MB)" [:br]
        "Stile: Amber Ale"]
@@ -323,7 +324,7 @@
       [:p.menu-section-title
        "TEMPORIS"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "E' la birra prodotta e dedicata per la primavera, e come tale offre un’esplosione di profumi che vanno dal fruttato, all’erbaceo dovuto ai luppoli usati in fermentazione, allo speziato ottenuto con un miscela di erbe e spezie elaborate dopo lunghe notti di ricerche. Una birra ricca di suggestioni, complessa nei profumi e nel gusto, ed altamente dissetante." [:br]
        "Birrificio: Croce di malto (Novara)" [:br]
        "Stile: Saison"]
@@ -333,7 +334,7 @@
       [:p.menu-section-title
        "LA ROSSA"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Birra doppio malto a bassa fermentazione, non pastorizzata, prodotta con materie prime selezionate e di qualità. Il suo colore brillante, la schiuma pannosa, ed i profumi fruttati preannunciano la pienezza data dal ricco sapore dei malti europei, protagonisti anche nella moderata dolcezza del finale. Il bilanciamento apportato dai luppoli, ed il piacevole grado alcolico, invogliano pericolosamente la beva." [:br]
        "Birrificio: La Tresca (Novara)" [:br]
        "Stile: Bock"]
@@ -346,7 +347,7 @@
       [:p.menu-section-title
        "OKIE  MATILDE (75 cl)"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "È con un certo orgoglio che vi presentiamo questa birra. Un tributo e una rivisitazione di una grande trappista belga (la Orval) che si presenta però molto più equilibrata dell'originale. È una cosiddetta birra “acida”, di colore arancio opaco, che sprigiona sin dal primo accostamento tutte le note speziate: pepe, scorza d'arancio, pesca e pera, e l'inconfondibile componente lattica data dai Brettomiceti usati per la fermentazione. La bevuta è molto facile e soddisfacente." [:br]
        "Birrificio: Toccalmatto (Parma)" [:br]
        "Stile: Belgian pale ale"]
@@ -360,7 +361,7 @@
       [:p.menu-title
        "DRINK DIFFERENT"]
 
-      [:p.menu-title.overlay
+      [:p.menu-title2.overlay
        "VINI"]
 
       [:p.menu-section-title
@@ -381,7 +382,7 @@
 
       [:p.menu-section-title "BIR PLETOK"]
 
-      [:p.menu-item-text
+      [:p.menu-item-text.text-justify
        "Vi proponiamo la nostra rivisitazione di una bevanda molto particolare." [:br]
        "Leggenda narra che secoli fa nell'isola di Jakarta (allora occupata dagli Olandesi) gli abitanti del luogo cercassero di emulare quella che per loro era una bevanda misteriosa e inavvicinabile per le loro tasche, ma che i conquistatori e le élite locali bevevano a fiumi! Nacque una ricetta molto particolare che si usava «shakerare» in una canna di bambù  producendo così la schiuma caratteristica della birra che si cercava di riprodurre." [:br]
        "Si può servire ghiacciata per dissetarsi nelle torride giornate estive oppure calda per scaldarsi le membra nei mesi più freddi. Provare per credere!"]
@@ -391,7 +392,7 @@
 
       (menu-item-f "Coca-Cola (20cl)" "3,00")
       (menu-item-f "Coca-cola zero (33cl)" "3,00")
-      (menu-item-f [:div.menu-item-text "Bibite Galvanina BIO  (35,5cl) cola - aranciata bionda - aranciata rossa - gazzosa - tonica - ginger - chinotto - thè freddo limone❘pesca"] "3,50")
+      (menu-item-f "Bibite Galvanina BIO  (35,5cl) cola - aranciata bionda - aranciata rossa - gazzosa - tonica - ginger - chinotto - thè freddo limone❘pesca" "3,50")
         
       (menu-item-f "Succhi di frutta BIO" "3,50")
 
