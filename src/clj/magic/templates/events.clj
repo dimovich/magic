@@ -47,23 +47,11 @@
       [:p.event-date.text-left
        "31 Dicembre 2016"]
       [:p.event-text.text-left
-       "Vi presentiamo il nostro menù di Capodanno! Per prenotazioni chiamare il numero " [:span {:style "white-space:nowrap;"} "333 621 08 14."]]
-      [:ul.event-text
-       [:li "Lardo nostrano con castagne al miele"]
-       [:li "Carpaccio di vitella con bagna caòda"]
-       [:li "Sformato di cardi al gorgonzola"]
-       [:li "Risotto al nero di seppia e capesante e Tagliatelle al ragù di cinghiale"]
-       [:li "Cosciotto di maiale al melograno e arrosticini di agnello alla menta"]
-       [:li "Patate al forno"]
-       [:li "Tiramisù"]
-       [:li "Caffè"]]
-
-      [:p.event-text.text-left
        "Prezzo a persona: € 60,00 con musica live & bevande incluse" [:br]
-       "Prezzo eventuale menù bimbi: € 20,00"]
-      #_[:p.event-text [:a {:href "https://goo.gl/qujU5l"} "More information..."]]]
+       "Prezzo eventuale menù bimbi: € 20,00" [:br] [:br]
+       "Per prenotazioni chiamare il numero " [:span {:style "white-space:nowrap;"} "333 621 08 14."] [:br] [:br]
+       [:a {:href "https://www.facebook.com/1140174652712678/photos/a.1144841458912664.1073741827.1140174652712678/1311207108942764"} "IL nostro menù..."]]]
 
-     
      [:p#23-12-2016.event-title.overlay.text-left
       "Marine Band (Blues)"]
      [:div.event-c
